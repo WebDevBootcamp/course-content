@@ -6,6 +6,7 @@ JavaScript.
 Prerequisite reading material:
 
  <http://docs.webplatform.org/wiki/concepts/programming/programming_basics>
+ <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>
 
 ## Basic Structure
 
@@ -383,16 +384,126 @@ var safeLength = function(text) {
   }
   return text.length;
 }
+// nothing happens until the following is uncommented
+// return safeLength('some text');
 ```
 
 Functions are executed, or *invoked*, using parentheses to supply arguments 
 to the method: `var length = safeLength( theValue );`
 
+## Collection Data Types
 
-## Arrays
+Lists and hashtables represent the two most fundamental generic data types
+in programming languages. These provide the ability for you to store the
+data you are using in your program among other things.
 
-`TODO`
+* *Lists* - defines an ordered list of values, also called *arrays* or
+  *vectors*
+* *Hashtables* - define a collection of **key/value** pairs, also called
+  *dictionaries*
 
-## Objects
+### Arrays
 
-`TODO`
+The `Array` object provides the ability to create lists in JavaScript. The
+syntax uses square brackets and a comma separated list of values:
+
+```javascript.interactive
+var empty = []; // an empty array
+var list = [ 1, 2, 3, 4 ]; // an array with values
+return list.length;
+```
+
+Items within the list can be accessed using brackets and the index of the
+item to access. Note that the index is *zero-based*:
+
+```javascript.interactive
+var colors = [ 'Red', 'Blue', 'Orange' ];
+return colors[1]; // returns 'Blue'
+```
+
+This can also be used to update values in an array:
+
+```javascript.interactive
+var values = [ 0, 1, 2];
+values[0] = 12;
+return values[0];
+```
+
+### Array Values
+
+Arrays can contain references to any JavaScript object, including primitive
+values, other objects and arrays, function references, etc.
+
+```javascript.interactive
+var complex = [
+  12,
+  'text too',
+  [ 'sub', 'array'],
+  function() {
+    // anonymous function reference
+  }
+];
+// dereference multiple arrays
+return complex[2][0];
+```
+
+In real world applications a particular array will usually contain the same
+type of values.
+
+### Iterating Arrays
+
+An extremely common pattern you will see an use is iterating over the items
+in an array:
+
+```javascript.interactive
+var list = [ 0, 1, 2, 3, 4];
+for(var index = 0; index < list.length; index++) {
+  var item = list[index];
+  console.log("value at " + index + " is " + item);
+}
+```
+
+This uses a `for` loop to execute a block of code on each item in an array.
+
+### Array Manipulation
+
+Array objects also have several [methods](http://www.w3schools.com/jsref/jsref_obj_array.asp)
+that allow you to manipulate lists in various ways. For instance you can add
+items to an array using `push`:
+
+```javascript.interactive
+var list = [ 'first' ];
+list.push('second');
+return list;
+```
+
+and even join multiple arrays together:
+
+```javascript.interactive
+var numbers = [ 0, 1, 2, 3 ];
+var values = [ 'this', 'that', 'other' ];
+return numbers.concat(values);
+```
+
+### Objects
+
+Technically everything in JavaScript is an object, even the primitive
+types we've been working with so far:
+
+```javascript.interactive
+// the parentheses are needed to keep the dot from being interpreted
+// as a decimal
+return (2).toString();
+```
+
+However, when talking about objects in JavaScript we usually mean `object`
+literals. They are defined using curly braces and a collection of properties:
+
+```javascript.interactive
+var empty = {}; // an empty object
+var options = {
+  key: 'something',
+  value: 100
+}
+```
+
