@@ -1,4 +1,4 @@
-# Functional Programming
+# Working with Functions
 
 Writing functions is one of the key aspects of writing computer programs - this
 is how we break down what the program needs to do into managable chunks.
@@ -8,6 +8,9 @@ JavaScript, writing applications in a more *functional* style is a good way
 to take advantage of the things JavaScript does well. It's also an essential
 techinique for writing applications that run in a single-threaded, event
 driven environment.
+
+Activity reading:
+* <http://docs.webplatform.org/wiki/concepts/programming/javascript/functions>
 
 ## Decomposing Problems into Functions
 
@@ -64,7 +67,7 @@ Write a function that returns the number of words in fragment of text.
 
 ### Basic Example - Interface
 
-We begin by defining the funciton skeleton and document the interface:
+We begin by defining the function skeleton and document the interface:
 
 ```javascript.interactive
 // Counts the number of words in a text fragment
@@ -269,10 +272,4 @@ asycFunction( 'Second', function(message) {
 
 console.log('after invoke');
 ```
-
-## Program Logic as Compositional Elements
-
-Ugh, terrible title...
-
-## The Underscore Library
 
