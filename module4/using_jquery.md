@@ -44,7 +44,7 @@ There are two things of note here:
   compression makes it essentially impossible to use the browser debugging
   tools to diagnose any problems in the script.
 
-(Minification will be discussed in more detail in a later section)
+*(Minification will be discussed in more detail in a later section)*
 
 In addition, many popular JavaScript libraries can be referenced from a
 *Content Delivery Network* (CDN), for instance:

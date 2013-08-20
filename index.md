@@ -31,8 +31,18 @@ JavaScript
   Responding to user input and actions is a key part of making pages and
   applications that can interact with the user.
 * [jQuery Plug-ins](?md=./course-content/module4/jquery_plugins.md) -
+  jQuery is designed to be easily extended to add your own behaviors and UI
+  elements
 * [Asynchronous Programming](?md=./course-content/module4/asynchronous_programming.md) -
+  Understanding asynchronous behavior in JavaScript is essential to writing
+  responsive applications
 * [Accessing Server Resources](?md=./course-content/module4/accessing_server_resources.md) -
+  Up to this point we've been dealing with one half of the web application
+  landscape - almost all applications will also need to access resources that
+  are provided by separate server instance
 * [Using Browser Storage](?md=./course-content/module4/using_browser_storage.md) -
+  HTML5 provides several APIs for storing data in the browser
 * [JavaScript Frameworks](?md=./course-content/module4/javascript_frameworks.md) -
+  JavaScript frameworks are a dime a dozen, but many exist to fill in or improve
+  on shortcomings of the underlying runtime environment
 
