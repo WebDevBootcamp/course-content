@@ -59,7 +59,6 @@ What is the web?
 
 What is the Internet? 
 
-## [History of the Internet](/history_of_the_internet.md)
+## History of the Internet
 
-...
-
+[History of the Internet](/history_of_the_internet.md)
