@@ -47,6 +47,10 @@ And all of this wisdom will be transmitted to you by the following seers (presen
 
 ## Me Who?
 
+Webapper Services
+Senior Web Architect
+Entpreneur (11 year-old software company)
+
 ## Open Kimono
 
 ## Getting Started
