@@ -40,10 +40,10 @@ Here’s the outline for the rest of the course (6 modules):
 And all of this wisdom will be transmitted to you by the following seers (present company excepted, of course):
 
 * [Patrick Quinn](http://www.linkedin.com/in/patrickmquinn) / Me (module 1)
-* [Kevin Sholander](www.linkedin.com/pub/kevin-sholander/2/242/958) (module 2)
+* [Kevin Sholander](http://www.linkedin.com/pub/kevin-sholander/2/242/958) (module 2)
 * [Matt Kunze](https://github.com/MattKunze?tab=activity) (modules 3-4)
 * ?? / Mystery Guest (module 5)
-* [Colin Stevenson](www.linkedin.com/pub/colin-stevenson/3/a/4b2) (module 6)
+* [Colin Stevenson](http://www.linkedin.com/pub/colin-stevenson/3/a/4b2) (module 6)
 
 ## Me Who?
 
