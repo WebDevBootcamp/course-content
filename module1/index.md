@@ -9,10 +9,10 @@ Welcome to the Front Range Community College WebLab!
 ## Tonight
 
 * Welcome and introductions
-* [Week 1 Outline](?md=/course-content/module1/index.html) -
+* [Week 1 Outline](?md=/course-content/module1/index.md) -
   Covers the basics of writing computer programs, and the basic constructs of
   the JavaScript language
-* [Course Outline](?md=/course-content/module1/index.html) -
+* [Course Outline](?md=/course-content/module1/index.md) -
   Covers the basics of writing computer programs, and the basic constructs of
   the JavaScript language
   
