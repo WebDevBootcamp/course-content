@@ -14,12 +14,12 @@ Highlights:
 * ARPANET (important Internet precursor) expands in 1980s.
 * Barriers to commercialization gradually removed in 1980s and early 1990s. 
 * Commercial Internet born.
-* Internet a network of networks featuring a collection of computing “services”&mdash;Email, file transfer (FTP), and...”dub dub dub” (aka, the World Wide Web, or just “the web). 
+* Internet a network of networks featuring a collection of computing “services”—Email, file transfer (FTP), and...”dub dub dub” (aka, the World Wide Web, or just “the web). 
 * This is where you come in!
 
 ## Wikipedia - History of the World Wide Web
 
-Be honest &mdash; did you know there was a difference?
+Be honest-did you know there was a difference?
 
 [http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web](http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web)
 
@@ -27,9 +27,9 @@ Highlights:
 
 * “The Web is a service that operates over the Internet, just as e-mail also does.”
 * The web is a collection of “pages.” (Though page vs. “screen” concepts are changing dramatically over time). 
-* 1990: Basic elements of the web complete&mdash;HTTP, HTML, web browser and web server.
+* 1990: Basic elements of the web complete—HTTP, HTML, web browser and web server.
 * Commercialization of the web leads to “dot com bubble,” followed by a more “mature” web.
-* The web today&mdash;web 2.0 and beyond.
+* The web today—web 2.0 and beyond.
 
 ## Reach vs. Rich
 
