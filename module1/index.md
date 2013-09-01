@@ -1,6 +1,6 @@
 # WebLab Course Content
 
-## Module 1 - Introduction to Web Development
+## Week 1 - Introduction to Web Development
 
 Welcome to the Front Range Community College WebLab!
 
