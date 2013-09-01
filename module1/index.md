@@ -2,9 +2,9 @@
 
 Welcome to the Front Range Community College WebLab!
 
-![FRCC Weblab Logo](/img/frcc_weblab_logo.jpg)
+Week 1 - Introduction to Web Development
 
-## Week 1 - Introduction to Web Development
+![FRCC Weblab Logo](/img/frcc_weblab_logo.jpg)
 
 ## Tonight
 
