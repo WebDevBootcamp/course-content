@@ -61,5 +61,5 @@ What is the Internet?
 
 ## History of the Internet
 
-[History of the Internet](/history_of_the_internet.md)
+[History of the Internet](?md=/course-content/module1/history_of_the_internet.md)
 
