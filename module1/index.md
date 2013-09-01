@@ -55,9 +55,13 @@ Entpreneur (11 year-old software company)
 
 ## Getting Started
 
-What is the web? 
+What does the Internet/web mean to you?
 
-What is the Internet? 
+What’s your favorite part of the web? Why?
+
+What are examples of really excellent software/tools/services on the web?
+
+Why do you want to be a web developer? Based on your understanding of it so far, what piques your interest? 
 
 ## History of the Internet
 
