@@ -4,7 +4,7 @@
 
 Welcome to the Front Range Community College WebLab!
 
-![FRCC](/Users/IamSigmund/Documents/WebLab/git/course-content//module1/img/frcc_weblab_logo.jpg)
+![FRCC Weblab Logo](/img/frcc_weblab_logo.jpg)
 
 ## Tonight
 
