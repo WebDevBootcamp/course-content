@@ -19,7 +19,7 @@ Highlights:
 
 ## Wikipedia - History of the World Wide Web
 
-Be honest&mdash;did you know there was a difference?
+Be honest &mdash; did you know there was a difference?
 
 [http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web](http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web)
 
