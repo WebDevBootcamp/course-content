@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Internet Plumbing
+# FRCC WebLab - Internet Plumbing
 
 ...
 

@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Thinking & Acting Like A Developer
+# FRCC WebLab - Thinking & Acting Like A Developer
 
 ...
 

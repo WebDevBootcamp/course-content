@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Jobs & Roles in Web Development
+# FRCC WebLab - Jobs & Roles in Web Development
 
 ...
 

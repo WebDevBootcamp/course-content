@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Clients & Client-Side Concepts
+# FRCC WebLab - Clients & Client-Side Concepts
 
 ...
 

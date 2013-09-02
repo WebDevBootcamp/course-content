@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - TodoMVC Sample Application
+# FRCC WebLab - TodoMVC Sample Application
 
 TodoMVC
 
