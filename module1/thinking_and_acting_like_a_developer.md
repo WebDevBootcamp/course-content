@@ -4,7 +4,7 @@ Question: What habits can I develop now that will make me a great (and employabl
 
 ## IDE
 
-Question? What's a good IDE? Why?
+Question: What's a good IDE? Why?
 
 ## Brackets
 
