@@ -47,11 +47,26 @@ And all of this wisdom will be transmitted to you by the following seers (presen
 
 ## Me Who?
 
-Webapper Services
-Senior Web Architect
-Entpreneur (11 year-old software company)
+* Senior Web Architect / Software Project Manager / Performance Engineer
+* Owner/entrepreneur - [Webapper Services, LLC](http://www.webapper.com) (Founded 2002)
+* 16 years in IT; 14 years in software
+* First book: _Networking for Dummies_
+* Second book: _Windows NT Networking for Dummies_
+* The rest is history!
 
 ## Open Kimono
+
+I’m an open book (kimono)! Ask me anything about any part of the web development world. I’ve been in a lot of foxholes (and yes, now I’m mixing kimono and foxhole metaphors&mdash;messy!). And I want you to think of me as an ongoing resource for you beyond just module one. Here’s my contact info:
+
+Email: [pquinn@webapper.com](mailto:pquinn@webapper.com)
+
+LinkedIn: [http://www.linkedin.com/in/patrickmquinn](http://www.linkedin.com/in/patrickmquinn)
+
+Twitter (@IamSigmund): [http://www.twitter.com/IamSigmund](http://www.twitter.com/IamSigmund)
+
+Facebook: [http://www.facebook.com/IamSigmund](http://www.facebook.com/IamSigmund)
+
+Office: 970.223.2278
 
 ## Getting Started
 
