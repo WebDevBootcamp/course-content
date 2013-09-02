@@ -21,6 +21,10 @@ Server-based programming languages
 
 [http://en.wikipedia.org/wiki/Server-side_scripting#Server-side_scripting_languages](http://en.wikipedia.org/wiki/Server-side_scripting#Server-side_scripting_languages)
 
+## Look Inside
+
+Look inside a real app server. 
+
 ## Next: Clients & Client-Side Concepts
 
 [Clients & Client-Side Concepts](?md=/course-content/module1/clients_and_client-side_concepts.md)
