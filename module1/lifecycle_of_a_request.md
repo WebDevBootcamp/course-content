@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Lifecycle of a Request
+# FRCC WebLab - Lifecycle of a Request
 
 Opinion poll: What happens when you click?
 

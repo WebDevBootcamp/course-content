@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Servers and Server-Side Concepts
+# FRCC WebLab - Servers & Server-Side Concepts
 ...
 
 ## Next: Clients & Client-Side Concepts

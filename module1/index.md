@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - Module 1
+# FRCC WebLab - Module 1
 
 Welcome to the Front Range Community College WebLab!
 

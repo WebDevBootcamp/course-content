@@ -1,4 +1,4 @@
-# FRCC WebLab Course Content - History of the Internet
+# FRCC WebLab - History of the Internet
 
 The Internet has had history’s most transformative impact on life; perhaps more so, even, than the invention of the printing press. Of particular significance is the creation of an entirely new layer of the economy—the so-called “new economy” of “knowledge workers.” Many of the very best jobs available in the 21st-century world are in this relatively new area of the economy. An appreciation of the history and evolution of the Internet and the web will help workers thrive in this new economy.
 
