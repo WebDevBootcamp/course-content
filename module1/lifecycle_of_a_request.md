@@ -29,7 +29,7 @@ Additional LOAR infographics/diagrams:
 [http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol](http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
 [http://www.google.com/green/storyofsend/desktop/](http://www.google.com/green/storyofsend/desktop/)  
-(Somewhat simplified, but still quite detailed. And, a great rich web example to boot!
+(Somewhat simplified, but still quite detailed. And, a great rich web example to boot!)
 
 [http://visual.ly/consuming-web](http://visual.ly/consuming-web)  
 (Mostly browser market share)
