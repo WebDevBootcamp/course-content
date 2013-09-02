@@ -8,7 +8,7 @@ Question: What's a good IDE? Why?
 
 ## Brackets
 
-Brackets by Adobe
+[Brackets by Adobe](http://brackets.io/)
 
 ## Clean Code
 
