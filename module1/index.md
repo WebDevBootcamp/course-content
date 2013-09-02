@@ -78,7 +78,7 @@ What are examples of really excellent software/tools/services on the web?
 
 Why do you want to be a web developer? Based on your understanding of it so far, what piques your interest? 
 
-## History of the Internet
+## Next: History of the Internet
 
 [History of the Internet](?md=/course-content/module1/history_of_the_internet.md)
 
