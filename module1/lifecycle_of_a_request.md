@@ -36,6 +36,12 @@ Additional LOAR infographics/diagrams:
 
 [http://scoop.intel.com/files/2012/03/infographic_1080_logo.jpg](http://scoop.intel.com/files/2012/03/infographic_1080_logo.jpg)
 
+## Web Developer Tools
+
+Great recent video on Chrome developer tools:
+
+[https://www.youtube.com/watch?v=x6qe_kVaBpg](https://www.youtube.com/watch?v=x6qe_kVaBpg)
+
 ## Next: Plumbing
 
 [Internet Plumbing](?md=/course-content/module1/plumbing.md)
