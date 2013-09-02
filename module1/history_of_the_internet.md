@@ -19,7 +19,7 @@ Highlights:
 
 ## Wikipedia - History of the World Wide Web
 
-Be honest-did you know there was a difference?
+Be honest—did you know there was a difference?
 
 [http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web](http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web)
 
@@ -62,4 +62,10 @@ Good explanation of the importance of Javascript MVC (and related design pattern
 
 [http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/](http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/)
 
+## Congrats!
 
+Congratulations! You’re entering one of the premiere occupations of the 21st century—web development. The web is a global, interconnected computing platform for information sharing, collaboration, and commerce. And you’re going to build the next generation of _stuff_ on that platform!
+
+## Next: Lifecycle of a Request
+
+[Lifecycle of a Request](?md=/course-content/module1/lifecycle_of_a_request.md)
