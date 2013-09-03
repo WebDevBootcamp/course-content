@@ -15,25 +15,25 @@ Week 1 - Introduction to Web Development
 
 ## Week 1 Outline
 
-* History of the web/Internet (and the history of computing that’s most relevant to the web). 
-* Lifecycle of a request (or “LOAR”). 
-* Plumbing (protocols, standards, wiring, etc.).
-* Servers and server-side concepts.
-* Clients and client-side concepts.
-* Jobs and roles in web development.
-* Thinking and acting like a developer. 
-* Sample application (to-do list app). 
+* History of the web/Internet (and the history of computing that’s most relevant to the web) 
+* Lifecycle of a request (or “LOAR”) 
+* Plumbing (protocols, standards, wiring, etc.)
+* Servers and server-side concepts
+* Clients and client-side concepts
+* Jobs and roles in web development
+* Thinking and acting like a developer 
+* Sample application (to-do list app) 
 
 ## Course Outline
 
 Here’s the outline for the rest of the course (6 modules):
 
-1. Overview of the web and web technologies.
-2. HTML & CSS.
-3. Javascript.
-4. More Javascript.
-5. UI/UX Design.
-6. Thinking Like A Developer.
+1. Overview of the web and web technologies
+2. HTML & CSS
+3. Javascript
+4. More Javascript
+5. UI/UX Design
+6. Thinking Like A Developer
 
 ## Your Instructors
 
