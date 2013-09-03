@@ -54,6 +54,21 @@ And all of this wisdom will be transmitted to you by the following seers (presen
 * Second book: _Windows NT Networking for Dummies_
 * The rest is history!
 
+## Languages
+
+I've developed production software using:
+
+* Java (desktop, servlets, JSP)
+* ColdFusion (CFML)
+* Javascript
+* Actionscript/MXML
+* Google Apps Script
+* VB Script
+* XML
+* CSS
+* HTML
+* Delphi
+
 ## Open Kimono
 
 I’m an open book (kimono)! Ask me anything about any part of the web development world. I’ve been in a lot of foxholes (and yes, now I’m mixing kimono and foxhole metaphors&mdash;messy!). And I want you to think of me as an ongoing resource for you beyond just module one. Here’s my contact info:
