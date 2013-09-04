@@ -18,6 +18,22 @@ Responses:
 
 Source: [http://www.websiteoptimization.com/secrets/metrics/10-21-http-request.html](http://www.websiteoptimization.com/secrets/metrics/10-21-http-request.html)
 
+## Cleanup from Tuesday
+
+* Questions/comments/feedback?
+* Programming task!
+* 
+
+## First Programming Task
+
+Roomies App (like Besties!)
+
+* 60 school-aged children; 31 boys, 29 girls
+* 10 dorm rooms, 4-8 children in each room
+* Same-sex rooms only!
+* Kicker: Each child can have a besties list of up to 4 roomates, and everyone is guaranteed at least 1 roommate from his/her besties list
+* Management needs this app completed, tested and launched by the end of the day!
+
 ## More LOAR
 
 Additional LOAR infographics/diagrams:
