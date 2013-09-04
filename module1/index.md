@@ -93,7 +93,11 @@ What are examples of really excellent software/tools/services on the web?
 
 Why do you want to be a web developer? Based on your understanding of it so far, what piques your interest? 
 
-Google Docs folder: [https://drive.google.com/a/webapper.com/#folders/0B0HFqOyOPltCYkIzYVB5VVU3a3M](https://drive.google.com/a/webapper.com/#folders/0B0HFqOyOPltCYkIzYVB5VVU3a3M)
+Google Docs folders:
+
+[Student Folder (read-only)](https://drive.google.com/folderview?id=0B0HFqOyOPltCYkIzYVB5VVU3a3M&usp=sharing)
+
+[Week 1 Folder (read-write)](https://drive.google.com/folderview?id=0B0HFqOyOPltCci1zSDUyNC1OSHc&usp=sharing)
 
 ## Next: History of the Internet
 
