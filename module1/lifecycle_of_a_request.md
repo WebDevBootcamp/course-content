@@ -27,7 +27,7 @@ Source: [http://www.websiteoptimization.com/secrets/metrics/10-21-http-request.h
 
 ### Source control book
 
-[_Source Control by Example_](http://www.ericsink.com/vcbe/ ), by Eric Sink.
+[ _Source Control by Example_ ](http://www.ericsink.com/vcbe/ ), by Eric Sink.
 
 ### Tech trends video
 
