@@ -16,6 +16,7 @@ Use HTML to describe the purpose of the text:
 ## ADA - Americans with disabilities act
 When possible, try to adhere to the ADA recommendations for web design:
 [Creating an ADA compliant website](http://www.techrepublic.com/blog/web-designer/creating-an-ada-compliant-website/)
+ADA website for reference:
 [ADA website - chapter 5](http://www.ada.gov/pcatoolkit/chap5toolkit.htm)
 
 ## HTML validation
@@ -29,6 +30,7 @@ Web tools for validation
 ### [W3C validator](http://validator.w3.org)
 
 Brackets contains a lint checker for validating code
+[Short introduction to Brackets](http://www.youtube.com/watch?feature=player_embedded&v=HZkrlX7jJcg)
 
 ## Resources and where to go for help
 
