@@ -130,5 +130,8 @@ InLine tags:
 ### time
 ### span
 
+# Full list of available defined tags
+[W3C HTML Language Reference](http://www.w3.org/TR/html-markup/elements.html)
+
 # Next: Best Practices
 [Best Practices](?md=course_content/module2/best_practices.md)
