@@ -11,6 +11,7 @@ Six levels of headings: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
 ```
 
 ## Title - page title must be within the head element
+Page title is displayed in the browser tab but not within the rendered document
 ```
 <title>Page Title</title>
 ```
