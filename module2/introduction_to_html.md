@@ -4,6 +4,7 @@
 HTML is a markup language, not a programming language. When you are writing HTML, you are marking up or authoring a document
 
 | **HTML** | **Programming Language** |
+| -------- | ------------------------ |
 | Highlights areas of text to indicate their semantic purpose | Contains a series of instructions to perform an operation |
 | Comprised of elements, tags and properties | Comprised of statements which are made up of keywords, variables and functions |
 | Output is rendered by a user-agent (browser) | Code is compiled or interpreted and executed |
