@@ -29,6 +29,7 @@ Example nested element: <p>This paragraph contains a <a href="http://www.google.
 ### Attributes - an element can be assigned properties which can be assigned values. Useful for creating links or assigning unique identifiers to tags which can be used in CSS and JS.
 ```
 Example attributes: <img id='myImage' class='smallImages' src='pictureOfMyDog.jpg'/>
+```
 ### Self Closing Tags - certain tags are considered self-closing, i.e. they do not need a closing tag. These tags do not have any content, though they can have attributes. Self-closing tags can have a slash before the closing bracket to indicate that the tag is self-closing.
 ```
 Example self-closing tags: <br/> <img src='pic.jpg'/>
