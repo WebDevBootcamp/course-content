@@ -112,9 +112,9 @@ return value.length;
 ```
 
 Strings objects also have quite a few
-[methods](http://www.w3schools.com/jsref/jsref_obj_string.asp), which support
-a wide range of common actions that can be performed on the values. We'll
-cover these more in a bit in the functions section.
+[methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype#Methods),
+which support a wide range of common actions that can be performed on the
+values. We'll cover these more in a bit in the functions section.
 
 For instance, there are `toUpperCase` and `toLowerCase` methods that change
 the value of the current variable:
@@ -262,6 +262,18 @@ else if(color === 'white') {
 else {
   return 'neither';
 }
+```
+
+Note that when dealing with object references, this performs a *shallow*
+check that two variables refer to the same object, not that the values are
+the same
+
+```javascript.interactive
+var first = [1, 2, 3];
+var second = [1, 2, 3];
+console.log(first === second); // false even though arrays are identical
+var third = first;
+console.log(first === third); // true because variables refer to same array
 ```
 
 ### Numeric Comparisons
@@ -467,7 +479,8 @@ This uses a `for` loop to execute a block of code on each item in an array.
 
 ### Array Manipulation
 
-Array objects also have several [methods](http://www.w3schools.com/jsref/jsref_obj_array.asp)
+Array objects also have several
+[methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Methods)
 that allow you to manipulate lists in various ways. For instance you can add
 items to an array using `push`:
 
