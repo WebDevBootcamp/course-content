@@ -3,10 +3,16 @@
 This section provides an introduction to computer programming languages using
 JavaScript.
 
-Prerequisite reading material:
+**Learning Objectives:**
 
- <http://docs.webplatform.org/wiki/concepts/programming/programming_basics>
- <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>
+* Understand the basic syntax of JavaScript
+* Understand data types and what they are used for
+* Explore the basic building blocks for constucting computer programs
+
+**Section Reading:**
+
+* <http://docs.webplatform.org/wiki/concepts/programming/programming_basics>
+* <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>
 
 ## Basic Structure
 
@@ -25,6 +31,14 @@ commented out
 // parentheses are used to group related items, and lines should end with a
 // semi-colon to mark the end of the statement (more on this later)
 var value = (1 + 2) * 3;
+
+
+// curly braces are used to create blocks of code
+function doStuff() {
+  var first = 'value';
+  console.warn('then do this');
+  return 'result';
+}
 ```
 
 ## Variables
@@ -46,7 +60,7 @@ new value:
 
 ```javascript.interactive
 var value = 1234;         // the value reference is a number
-value = 'something else'; // now it is a string
+value = 'something else'; // now it's a text value
 
 return value;
 ```
@@ -64,9 +78,10 @@ values:
 ### Strings
 
 Strings represent text data, which are stored as sequences (*strings*) of
-characters.
+characters. If you're curious, strings are stored internally as two-byte,
+UTF16-encoded text.
 
-The are defined by enclosing the text value in single or double-quotes - it 
+They are defined by enclosing the text value in single or double-quotes - it 
 doesn't matter which you use, but the end quote must be the same as the
 initial one:
 
@@ -164,13 +179,119 @@ Now might be a good time to mention the `typeof` function, which returns the
 basic type of a value or variable.
 
 ```javascript.interactive
-typeof('abc');  // returns 'string'
-typeof(123);    // returns 'number'
-typeof(false);  // returns 'boolean'
+console.log(typeof 'abc');  // 'string'
+console.log(typeof 123);    // 'number'
+console.log(typeof false);  // 'boolean'
 var ref;
-typeof(ref);    // returns 'undefined'
+console.log(typeof ref);    // 'undefined'
 ref = null;
-typeof(ref);    // returns 'null'
+console.log(typeof ref);    // 'object' - yes, not a typo unfortunately...
+```
+
+## Collection Data Types
+
+Lists and hashtables represent the two most fundamental generic data types
+in programming languages. These provide the ability for you to store the
+data you are using in your program among other things.
+
+* *Lists* - define an ordered list of values, also called *arrays* or
+  *vectors*
+* *Hashtables* - define a collection of **key/value** pairs, also called
+  *dictionaries* or *maps*
+
+### Arrays
+
+The `Array` object provides the ability to create lists in JavaScript. The
+syntax uses square brackets and a comma separated list of values:
+
+```javascript.interactive
+var empty = []; // an empty array
+var list = [ 1, 2, 3, 4 ]; // an array with values
+return list.length;
+```
+
+Items within the list can be accessed using brackets and the index of the
+item to access. Note that the index is *zero-based*:
+
+```javascript.interactive
+var colors = [ 'Red', 'Blue', 'Orange' ];
+return colors[1]; // returns 'Blue'
+```
+
+This can also be used to update values in an array:
+
+```javascript.interactive
+var values = [ 0, 1, 2];
+values[0] = 12;
+return values[0];
+```
+
+### Array Values
+
+Arrays can contain references to any JavaScript object, including primitive
+values, other objects and arrays, function references, etc.
+
+```javascript.interactive
+var complex = [
+  12,
+  'text too',
+  [ 'sub', 'array'],
+  function() {
+    // anonymous function reference
+  }
+];
+// dereference multiple arrays
+return complex[2][0];
+```
+
+In real world applications a particular array will usually contain the same
+type of values.
+
+### Array Manipulation
+
+Array objects also have several
+[methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Methods)
+that allow you to manipulate lists in various ways. For instance you can add
+items to an array using `push`:
+
+```javascript.interactive
+var list = [ 'first' ];
+list.push('second');
+return list;
+```
+
+and even join multiple arrays together:
+
+```javascript.interactive
+var numbers = [ 0, 1, 2, 3 ];
+var values = [ 'this', 'that', 'other' ];
+return numbers.concat(values);
+```
+
+### Objects
+
+Objects are the other common basic data type, they store a list of key/value
+pairs.  They are defined using curly braces and a collection of properties:
+
+```javascript.interactive
+var empty = {}; // an empty object
+var options = {
+  key: 'something',
+  value: 100
+}
+return options;
+```
+
+As we'll see later, objects can also contain methods to perform actions and
+manipulate it's properties.
+
+Technically everything in JavaScript is an object, even the primitive
+types we've been working with so far:
+
+```javascript.interactive
+// the parentheses are needed to keep the dot from being interpreted
+// as a decimal
+return (2).toString();
 ```
 
 ## Control Statements
@@ -230,6 +351,74 @@ There are a couple of new concepts here:
 `message = message + index`
 * Note that the addition operator performs text concatenation here - because
 `message` is a string, the second argument is converted to a string as well
+
+### Iterating Arrays
+
+An extremely common pattern you will see an use is iterating over the items
+in an array:
+
+```javascript.interactive
+var list = [ 0, 1, 2, 3, 4];
+for(var index = 0; index < list.length; index++) {
+  var item = list[index];
+  console.log("value at " + index + " is " + item);
+}
+```
+
+This uses a `for` loop to execute a block of code on each item in an array.
+
+### Object Iteration
+
+Loops can also iterate the keys in an object using the `for` ... `in` syntax:
+
+```javascript.interactive
+var addresses = {
+  home: '744 Evergreen Terrace',
+  work: '123 Something Ct',
+  other: 'The moon'
+};
+for(var key in addresses) {
+  console.log(key);
+}
+```
+
+### The Switch Statement
+
+The final common control statement simplifies the common pattern of running
+a different block of code depending on the value of a variable:
+
+```javascript.interactive
+var level = 'error';
+var message = 'Something happened';
+switch(level) {
+  case 'success':
+    console.log(message);
+    break;
+  case 'warning':
+    console.warn(message);
+    break;
+  case 'error':
+    console.error(message);
+    break;
+}
+```
+
+This is equivalent to the following:
+
+```javascript.interactive
+var level = 'error';
+var message = 'Something happened';
+if(level === 'success') {
+  console.log(message);
+}
+else if(level === 'warning') {
+  console.warn(message);
+}
+else if(level === 'error') {
+  console.error(message);
+}
+```
+
 
 ## Logical Statements
 
@@ -366,7 +555,7 @@ Because functions are an essential aspect of working with JavaScript, there
 is an upcoming section devoted specifically to how they work. For now,
 we'll just cover the basics.
 
-###Function Syntax
+### Function Syntax
 
 The basic syntax for defining a function is:
 
@@ -402,121 +591,4 @@ var safeLength = function(text) {
 
 Functions are executed, or *invoked*, using parentheses to supply arguments 
 to the method: `var length = safeLength( theValue );`
-
-## Collection Data Types
-
-Lists and hashtables represent the two most fundamental generic data types
-in programming languages. These provide the ability for you to store the
-data you are using in your program among other things.
-
-* *Lists* - defines an ordered list of values, also called *arrays* or
-  *vectors*
-* *Hashtables* - define a collection of **key/value** pairs, also called
-  *dictionaries*
-
-### Arrays
-
-The `Array` object provides the ability to create lists in JavaScript. The
-syntax uses square brackets and a comma separated list of values:
-
-```javascript.interactive
-var empty = []; // an empty array
-var list = [ 1, 2, 3, 4 ]; // an array with values
-return list.length;
-```
-
-Items within the list can be accessed using brackets and the index of the
-item to access. Note that the index is *zero-based*:
-
-```javascript.interactive
-var colors = [ 'Red', 'Blue', 'Orange' ];
-return colors[1]; // returns 'Blue'
-```
-
-This can also be used to update values in an array:
-
-```javascript.interactive
-var values = [ 0, 1, 2];
-values[0] = 12;
-return values[0];
-```
-
-### Array Values
-
-Arrays can contain references to any JavaScript object, including primitive
-values, other objects and arrays, function references, etc.
-
-```javascript.interactive
-var complex = [
-  12,
-  'text too',
-  [ 'sub', 'array'],
-  function() {
-    // anonymous function reference
-  }
-];
-// dereference multiple arrays
-return complex[2][0];
-```
-
-In real world applications a particular array will usually contain the same
-type of values.
-
-### Iterating Arrays
-
-An extremely common pattern you will see an use is iterating over the items
-in an array:
-
-```javascript.interactive
-var list = [ 0, 1, 2, 3, 4];
-for(var index = 0; index < list.length; index++) {
-  var item = list[index];
-  console.log("value at " + index + " is " + item);
-}
-```
-
-This uses a `for` loop to execute a block of code on each item in an array.
-
-### Array Manipulation
-
-Array objects also have several
-[methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Methods)
-that allow you to manipulate lists in various ways. For instance you can add
-items to an array using `push`:
-
-```javascript.interactive
-var list = [ 'first' ];
-list.push('second');
-return list;
-```
-
-and even join multiple arrays together:
-
-```javascript.interactive
-var numbers = [ 0, 1, 2, 3 ];
-var values = [ 'this', 'that', 'other' ];
-return numbers.concat(values);
-```
-
-### Objects
-
-Technically everything in JavaScript is an object, even the primitive
-types we've been working with so far:
-
-```javascript.interactive
-// the parentheses are needed to keep the dot from being interpreted
-// as a decimal
-return (2).toString();
-```
-
-However, when talking about objects in JavaScript we usually mean `object`
-literals. They are defined using curly braces and a collection of properties:
-
-```javascript.interactive
-var empty = {}; // an empty object
-var options = {
-  key: 'something',
-  value: 100
-}
-```
 
