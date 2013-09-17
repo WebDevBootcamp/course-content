@@ -9,11 +9,20 @@ Typically it is easier to write applications that don't depend on a complex
 type hierarchy. That being said, organizing code into objects is a very
 useful pattern to solve many common problems.
 
-Activity reading:
+**Learning Objectives**:
+
+* Define custom objects to represent internal data
+* Understand JavaScript's prototype-based inheritance mechanism
+* Understand the `this` reference within functions
+
+**Section Reading:**
 
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain>
 
 ## Defining Objects
+
+Classes in JavaScript are simply objects with properties that are references
+to the class values and methods that are available.
 
 Classes are defined in JavaScript using a named function, which functions as
 the class constructor. This creates a class that has a `prototype` property
@@ -21,28 +30,118 @@ which provides the ability to define methods that will be available to all
 instances of the class
 
 ```javascript.interactive
-function MyClass(options) {
+function MyClass(value) {
   // this is the constructor
-  this.value = (options ? options.value : null ) || 42;
+  this.value = value || 42;
 }
 
 // set up methods that are available for class instances
-MyClass.prototype = {
-  getValue: function() {
-    return this.value;
-  }
-}
+MyClass.prototype.getValue = function() {
+  return this.value;
+};
 
 // instances are created with the 'new' operator
 var my = new MyClass();
 return my.getValue();
 ```
 
+### Prototype Inheritance
+
+Prototypes can be chained together to extend functionality for child or
+dependent classes. This similar, but not identical to the object inheritance
+supported by many other languages.
+
+Objects are *subclassed* by extending the protoype:
+
+```javascript.interactive
+function Vehicle() {
+  this.name = 'vehicle';
+}
+Vehicle.prototype.drive = function(){
+  console.warn('Driving ' + this.name);
+}
+function Car() {
+  this.name = 'car';
+}
+// copy functions from Vehicle
+Car.prototype = new Vehicle();
+Car.prototype.start = function() {
+  console.warn('Start ' + this.name);
+}
+
+var car = new Car();
+car.start();
+car.drive();
+```
+
+### Prototype Inheritance
+
+This is an extremely flexible system, but one common complaint is that it
+requires a lot of boilerplate code. Most production code will use libraries
+to standardize these conventions, and simplify the syntax.
+
+However, overridding base class functions is awkward at best:
+
+```javascript.interactive
+function A() {}
+A.prototype.format = function() { return 'A'; }
+
+function B() {}
+B.prototype = new A();
+B.prototype.format = function() {
+  // need explicit reference to base class to invoke
+  var base = A.prototype.format.call(this);
+  return base + '+B';
+};
+return (new B).format();
+```
+
+### Object Prototype
+
+When an object property is referenced, JavaScript searches up an object's
+prototype chain to find a suitable value:
+
+`obj.value` ->
+
+* First checks if `obj` has the specified property
+* Then checks if the object prototype has that property
+* Continues up the prototype chain to `Object`
+* Finally returns `undefined` if not found
+
+Because of the akward syntax and performance issues of complicated
+hierarchies, most JavaScript code will have fairly shallow class hierarchies
+and use composition and functional constructs rather than traditional
+object-oriented architecture.
+
+### Dynamic Objects
+
+The object prototype is available to all instances of a class, and can
+even be modified after objects have been created.
+
+```javascript.interactive
+function MyClass(options) {
+  // this is the constructor
+  this.value = (options ? options.value : null ) || 42;
+}
+MyClass.prototype.getValue = function() { return this.value; };
+
+// create an object instance
+var instance = new MyClass({ value: 4 });
+
+// note that we can modify the protoype later
+MyClass.prototype.double = function() { return 2 * this.value; };
+
+return instance.double();
+```
+
+This is because the instance has a *reference* to the object prototype, but
+properties are not resolved until they referenced.
+
 ## The this Reference
 
-In most object-oriented languages the `this` reference is used within object
-functions to refer to the current instance of the class. This enables each
-instance to maintain it's own state.
+Object-oriented languages typically define a `this` or `self` reference that
+refers to the current object within the methods defined by the class. This
+is essential for each instance to maintain it's own state.
 
 ```javascript.interactive
 function Test(key) {
@@ -53,10 +152,35 @@ var second = new Test('Second');
 return 'First: ' + first.key + ' - Second: ' + second.key;
 ```
 
+### Obtaining this
+
 However, `this` is often a source of confusion for people used to other
 languages because it is bound to the object a function was invoked with
-(using the `.` syntax), and is not defined within functions that are
-invoked without an object reference.
+(using the `.` syntax).
+
+The value of this depends on how a function is invoked:
+
+<table class="table table-striped">
+  <tr>
+    <th>Syntax of function call</th>
+    <th>Value of <code>this</code></th>
+  </tr>
+  <tr>
+    <td><em>Method Call:</em> <code>obj.method()</code></td>
+    <td><code>obj</code></td>
+  </tr>
+  <tr>
+    <td><em>Baseless Function Call:</em> <code>method()</code></td>
+    <td>Global object (<code>window</code>) or <code>undefined</code> in strict mode</td>
+  </tr>
+  <tr>
+    <td><em>Using call or apply:</em> <code>method.call(context, arg1, arg2)</code></td>
+    <td><code>context</code></td>
+  </tr>
+</table>
+
+This tends to trip people up because nested functions defined within an
+object method do not inherit the parent function's `this` reference:
 
 ```javascript.interactive
 function Test(key) {
@@ -71,16 +195,19 @@ Test.prototype.doInvoke = function() {
   // 'this' refers to the class instance in this scope
   console.log('instance this: ' + this + ' - ' + this.key);
   logValue(this.key);
-}
-;(new Test('this?')).doInvoke();
+};
+(new Test('this?')).doInvoke();
 ```
 
 ### Caching this
 
-Because callbacks are so prevalent in JavaScript, the behavior of the `this`
-reference can be tricky to manage in practice. One common practice is to
-cache the current value of `this` within an class method, so callbacks
-within the function can access the value through the closure.
+The previous section might appear to be fairly esoteric, but because callback
+functions are so prevalent in JavaScript it is actually a fairly common
+issue.
+
+One common practice to address this is to cache the current value of `this`
+within an class method, so callbacks within the function can access the
+value through the closure.
 
 ```javascript.interactive
 function Test(key) {
@@ -94,9 +221,8 @@ Test.prototype.callbackTest = function() {
   }
   // invoke the callback
   callback()
-}
-;(new Test('callback')).callback();
-
+};
+(new Test('callback')).callbackTest();
 ```
 
 `_this`, `that`, and `ref` are common conventions for caching the current
@@ -104,15 +230,15 @@ object reference.
 
 ### Function call/apply
 
-Functions can also be invoked to provide an explcit value for the `this`
+Functions can also be invoked to provide an explicit value for the `this`
 reference. This is particularly useful when binding event callbacks as
 we'll see later.
 
 Two variants are available, the difference being how arguments are passed to
 the function:
 
-* `method.apply(thisReference, arrayOfArguments)`
 * `method.call(thisReference, argument1, argument2, ...)`
+* `method.apply(thisReference, arrayOfArguments)`
 
 These methods are typically used within anonymous functions to bind a
 callback to the current object:
@@ -122,53 +248,11 @@ function Test(key) {
   this.key = key;
 }
 var format = function(value) {
+  // note that format is not a class method, but 'this' still works
   return 'Test - ' + this.key + ' - ' + value;
 }
 var t = new Test('magic');
 return format.call(t, 'example')
-```
-
-## Prototype Inheritance
-
-Object inheritance in JavaScript is typically a fairly tricky thing to
-accomplish. In general, it's easier to use aggregation and to combine
-functionality from different objects than inheritance.
-
-Objects can be *subclassed* by extending the protoype:
-
-```javascript.interactive
-// 'parent' class
-function A() {}
-A.prototype.doSomething = function() {
-  console.log('A::something');
-}
-
-// 'child' class
-function B() {}
-B.prototype = new A(); // copy class from A
-B.prototype.anotherFunction = function() {
-  console.log('B::another');
-}
-
-var b = new B();
-b.doSomething();
-b.anotherFunction();
-```
-
-However, overridding base class functions is awkward at best:
-
-```javascript.interactive
-function A() {}
-A.prototype.format = function() { return 'A'; }
-
-function B() {}
-B.prototype = new A();
-B.prototype.format = function() {
-  // need explicit reference to base class to invoke
-  var base = A.prototype.format.call(this);
-  return base + '+B';
-}
-return (new B).format();
 ```
 
 ## Internal/Protected State
@@ -190,16 +274,4 @@ InternalState.prototype.incrementValue = function(amount) {
   this._dontTouch += amount;
 }
 ```
-
-## Built-in Objects
-
-The JavaScript runtime environment provides several global object references
-that provide access to various aspects of the browser environment your code is
-running within.
-
-### The window Object
-
-### The document Object
-
-### The navigator Object
 

@@ -9,7 +9,14 @@ to take advantage of the things JavaScript does well. It's also an essential
 techinique for writing applications that run in a single-threaded, event
 driven environment.
 
-Activity reading:
+**Learning Objectives**:
+
+* Learn how to decompose problems into functions
+* Practice separating function definitions from the implementation
+* Explore the difference between functional and imperative design
+
+**Section Reading**:
+
 * <http://docs.webplatform.org/wiki/concepts/programming/javascript/functions>
 
 ## Decomposing Problems into Functions
@@ -18,7 +25,7 @@ In mathematics, a *function* is a relation between a set of *inputs* and a set
 of potential *outputs* with the property that each input is related to exactly
 one output.
 
-*Diagram here...*
+![Black Box Diagram](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Blackbox.svg/500px-Blackbox.svg.png)
 
 Functions will produce the same output given the same input, but the reverse
 is not necessarily true.
@@ -46,11 +53,22 @@ The process of writing a function involves the following:
 Note that this is a just a basic guideline, in practice you'll often need to
 interate through these steps to finish writing your code.
 
+### Basic Example
+
+> Write a function that returns the number of words in fragment of text.
+
+* What should the input and output look like?
+* What name should the function have?
+
+```javascript.interactive
+// code will go here
+```
+
 ### Basic Example - Requirements
 
-Write a function that returns the number of words in fragment of text.
+> Write a function that returns the number of words in fragment of text.
 
-**TODO - Add capability to hide/collapse content initially**
+Basic requirements might look like:
 
 * **Input** - At a minimum, this will take a parameter that is the text fragment
   * Consider additional possibilities (in this case, maybe options for what is 
@@ -60,10 +78,6 @@ Write a function that returns the number of words in fragment of text.
   * Think about what the result should be in error cases (the input is not
     provided, is not the right data type, etc). In this case we'll keep it
     simple and just return 0
-
-```javascript.interactive
-// code will go here
-```
 
 ### Basic Example - Interface
 
@@ -214,6 +228,42 @@ second();
 console.log('After - Outer: ' + outer + '  Inner: ' + inner);
 ```
 
+### Nested Scopes
+
+As we saw, unctions at the same cannot see each others' internal scope.
+However, if a function is defined within another scope block, it has access
+to the parent scope:
+
+```javascript.interactive
+var parent = function() {
+  var parentValue = 1234;
+  var level = 'parent';
+
+  // define and execute a child function
+  var child = function() {
+    var childValue = 5678;
+    // parentValue is accessible because scope is nested
+    console.log('in child: ' + parentValue + ' - ' + childValue)
+
+    // shadowed variable
+    var level = 'child';
+    console.log('child level: ' + level);
+  }
+  child();
+
+  // note that shadowed value does not modify the value in this scope
+  console.log('parent level: ' + level);
+}
+parent();
+```
+
+Note the *shadowed* variable in the child function. The use of the `var`
+keyword defines a new variable, even though it has the same name as the
+value in the parent scope.
+
+This practice is usually discouraged, it results in code that is harder to
+understand.
+
 ### Side Effects
 
 *Side effects* in this context refer to changes that happen outside the scope
@@ -253,23 +303,19 @@ reasons:
 // asynchronous example
 var asyncFunction = function(input, callback) {
   // do something that is not available immediately
-  setTimeout(function() {
-    // another callback!
-    callback('after timeout - ' + input);
-  }, 100);
+  setTimeout(callback, 1000);
 }
 console.log('before invoke');
 
 // setup a callback function and invoke the method
-var callback = function(message) {
+asyncFunction( 'Second', function(message) {
   console.log('got: ' + message);
-}
-// you'll often see this written with an anonymous function instead
-asycFunction( 'Second', function(message) {
-  console.log('got: ' + message);
-})
+});
 
 
 console.log('after invoke');
 ```
 
+This uses the [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/window.setTimeout)
+function, which takes a callback parameter and executes the function after
+the specified number of milliseconds has elapsed.

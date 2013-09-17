@@ -5,7 +5,13 @@ Best practices are often a subjective concept, and a source of great debate
 broadly accepted in the community as examples of better code. Many of these
 apply broadly to any language or environment you might use.
 
-Activity reading:
+**Learning Objectives**:
+
+* Discuss practices that contribute to better code
+* Explore areas of JavaScript that are commonly accepted to avoid
+* Set expectations for common issues that all developers face
+
+**Section Reading:**
 
 * <http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/>
 * <http://docs.webplatform.org/wiki/tutorials/javascript_best_practices>
@@ -15,13 +21,12 @@ Activity reading:
 There is no right answer for best practices, but thinking about these ideas
 is an important part of continuing to improve as a developer.
 
-Why do we care about writing *good* code:
+Why we care about writing *good* code:
 
 * Play nicely with other libraries
-* Creating a maintainable codebase
+* Creating maintainable codebases
 * Enabling people to collaborate effectively
 * Avoid common pitfalls
-
 
 > Break any of these rules sooner than say anything outright barbarous
 >
@@ -37,7 +42,7 @@ The primary reason for this is that development is not simply writing code
 the first time, but *maintaining* a codebase over a period of time. Well-
 written code is easier to understand, modify, extend, and maintain.
 
-*yes*:
+*Easy to understand*:
 
 ```javascript.interactive
 function fibonacci(size) {
@@ -60,7 +65,7 @@ function fibonacci(size) {
 return fibonacci(10);
 ```
 
-*no*:
+*Um, not so much*:
 
 ```javascript.interactive
 function fib(l) {
@@ -69,6 +74,9 @@ function fib(l) {
 }
 return fib(10);
 ```
+
+Note that this conflicts to some extent with the *prefer simpler solutions*
+concept. Everything is a balance various goals.
 
 ### Popular Style Guideliness
 
@@ -214,34 +222,21 @@ statements where something clearer would suffice.
 For instance, when writing functions and modules:
 
 * Use short, meaningful names
-* Functions should do *one* thing
-* Strive for functions that are short (10-15 lines), and examine longer
-  blocks to potentially refactor and break into smaller pieces
-
-```javascript
-var addTask = function(task) {} // good
-var addTaskToCurrentListOfItems = function() {} // bad
-```
-
-* Each function should do one thing
-* Keep the code short - if the function is more than 10 or 15 lines, think of
+* Each function should do *one* thing
+* Keep code short - if the function is more than 10 or 15 lines, think of
   ways to break it apart into separate tasks
 
-### Don't Repeat Yourself
+```javascript.interactive
+var addTask = function(task) {} // good
+var addTaskToCurrentListOfItems = function() {} // bad
 
-The DRY principal is a concept originated from
-[The Pragmatic Programmer](http://pragprog.com/the-pragmatic-programmer/extracts/tips)
-which states that
+// good
+var updateStatus = function() {}
+var syncTasks = function() {}
 
-> Every piece of knowledge must have a single, unambiguous, authoritative
-> representation within a system
-
-In practice this means writing code that separates concern throughout the
-application and avoiding copying and pasting blocks of code for minor
-variations.
-
-The tongue-and-cheek alternate to this is WET, which means *Write Everything
-Twice*.
+// bad
+var updateAndSync = function() P{}
+```
 
 ### Be prepared to refactor and rewrite
 
@@ -257,4 +252,50 @@ better solution down the road.
 > The best writing is rewriting  -- E.B.White
 >
 > First do it, then do it right, then do it better -- Addy Osmani
+
+### Be Pragmatic
+
+[The Pragmatic Programmer](http://pragprog.com/the-pragmatic-programmer/extracts/tips)
+is a great reference for common practices that yield better code. This list
+is fairly long, but they are definitely good ideas to reflect on.
+
+Some of my favorites:
+
+**Care About Your Craft**
+
+Thinking about quality is an interative process like any other development
+task.
+
+**Don't Repeat Yourself (DRY)**
+
+> Every piece of knowledge must have a single, unambiguous, authoritative
+> representation within a system
+
+In practice this means writing code that separates concern throughout the
+application and avoiding copying and pasting blocks of code for minor
+variations.
+
+The tongue-and-cheek alternate to this is WET, which means *Write Everything
+Twice*.
+
+**Eliminate Effects Between Unrelated Things**
+
+This minimizes complexity and makes code easier to test and debug.
+
+Functional techniques are a great way to accomplish this.
+
+**Use the Power of Command Shells**
+
+Development is largely a task of processing text, and command line oriented
+tools can simplify many common tasks.
+
+**Always Use Source Control**
+
+Commit early and commit often.
+
+And remember, commit messages are notes to yourself (and others)in the future.
+Of course you know why you are doing something right now, but you will not
+remember the details as well when you are fixing a related problem in six
+months.
+
 
