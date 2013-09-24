@@ -134,6 +134,22 @@ Is it dark yet? Ok, then turn on the lights!*
 > are a relatively new feature that supports spawning separate threads to
 > perform background or long-running tasks
 
+### Memory Management
+
+Managing allocation of memory in applications is a complex and nuanced topic.
+Fortunately [maybe], JavaScript provides almost no features for manually
+managing the memory used by an application.
+
+JavaScript uses garbage collection to free unused resources in a similar
+fashion to Java and .NET. However, unlike these environments there is no
+way to programatically interact with the garbage collection layer (forced
+collection, etc).
+
+In practice, you can't completely ignore how resources are allocated in a
+JavaScript program. Instead, it's important to clear references in many cases
+to ensure objects can be garbage collected, especially with event handlers and
+callbacks as we'll see later..
+
 ## Libraries and Frameworks
 
 Computing environments are not simply the programming language, but the
