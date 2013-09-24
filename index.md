@@ -16,6 +16,10 @@ These activities cover an introduction to writing programs using JavaScript
 * [Creating Objects and Modules](?md=/course-content/module3/creating_objects_and_modules.md) -
   Objects are a great way to organize code so it is easier to test and
   maintain.
+* [Host Objects](?md=/course-content/module3/host_objects.md) -
+  The JavaScript runtime within web browsers and other environments provides
+  built-in objects to perform common tasks and have access to the current
+  environment.
 * [Best Practices](?md=/course-content/module3/best_practices.md) -
   Before getting too deep into the dark reaches of the language, it might be
   helpful to step back a bit and think about some acknowledged best practices
