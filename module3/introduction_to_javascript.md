@@ -14,6 +14,54 @@ JavaScript.
 * <http://docs.webplatform.org/wiki/concepts/programming/programming_basics>
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>
 
+## Using JavaScript on a Webpage
+
+JavaScript is rarely used in isolation from HTML web pages, including
+JavaScript within a page is the first step towards creating dynamic content.
+
+The `script` tag is the HTML element that supports including code in a
+webpage. It can either specify explicit code within the element body:
+
+```html
+<script>
+alert( ‘Hello from JavaScript’ );
+</script>
+```
+
+Or a `src` attribute can be provided to reference an external script, which
+the browser will download and execute (similar to an image tag.
+
+```html
+<script src=”js/application.js”></script>
+<script src=”js/chat_module.js”></script>
+```
+
+Any number of scripts can be included on a page this way.
+
+Similar to CSS, which can either be included within the page, or referenced
+in external files, it's generally better practice to separate markup and
+scripts to make a project easier to maintain.
+
+### Language Type
+
+Script tags can specify an optional `type` attribute to define the language 
+of the script content:
+
+```html
+<script type="text/javascript">
+// code goes here
+</script>
+```
+
+The type is optional in HTML5, and if it is omitted the browser will assume
+the code is JavaScript.
+
+```html
+<script>
+// this works too
+</script>
+```
+
 ## Basic Structure
 
 JavaScript is reminiscent of many other computer languages, notably C, Java,
