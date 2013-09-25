@@ -1,5 +1,7 @@
 # WebLab Course Content
 
+Content here some day
+
 ## Module3 - Introduction to JavaScript
 
 These activities cover an introduction to writing programs using JavaScript
