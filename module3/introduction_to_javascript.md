@@ -415,6 +415,39 @@ for(var index = 0; index < list.length; index++) {
 
 This uses a `for` loop to execute a block of code on each item in an array.
 
+### Comprehensive Example
+
+Here's an example that shows a more realistic chunk of code to perform a task.
+Given a list of book objects, the code separates the titles into two lists
+for fiction and nonfiction books.
+
+```javascript.interactive
+var books = [
+  { title: 'A House in the Sky', type: 'Nonfiction', author: 'Amanda Lindhout and Sara Corbett' },
+  { title: 'Empty Mansions', type: 'Nonfiction', author: 'Bill Dedman and Paul Clark Newell Jr.' },
+  { title: 'Never Go Back', type: 'Fiction', author: 'Lee Child' },
+  { title: 'Second Watch', type: 'Fiction', author: 'J.A. Jance' },
+  { title: 'Si-ology 1', type: 'Nonfiction', author: 'Si Robertson with MArk Schlabach' },
+  { title: "Still Foolin' 'em", type: 'Nonfiction', author: 'Billy Crystal' },
+  { title: "The Husband's Secret", type: 'Fiction', author: 'Liane Moriarty' },
+  { title: 'W is for Wasted', type: 'Fiction', author: 'Sue Grafton' },
+];
+
+var fiction = [];
+var nonfiction = [];
+for(var index = 0; index < books.length; index++) {
+  var book = books[index];
+  if(book.type === 'Fiction') {
+    fiction.push(book.title);
+  }
+  else if(book.type === 'Nonfiction') {
+    nonfiction.push(book.title);
+  }
+}
+console.log('Fiction: ' + fiction);
+console.log('Nonfiction: ' + nonfiction);
+```
+
 ### Object Iteration
 
 Loops can also iterate the keys in an object using the `for` ... `in` syntax:

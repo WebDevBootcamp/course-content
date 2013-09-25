@@ -1,6 +1,7 @@
 # WebLab Course Content
 
-Content here some day
+This contains links for the various topics covered throughout the WebLab
+course. Use the arrow keys to move forward and backward through the slides.
 
 ## Module3 - Introduction to JavaScript
 
