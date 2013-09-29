@@ -110,15 +110,15 @@ regular expression, and return the length of the list.
 
 ```javascript.interactive
 var wordCount = function(text) {
-  // \W matches non-word characters, match one or more
-  var tokens = text.split(/\W+/);
-  // account for empty elements at the start or end of the list
-  var count = tokens.length;
-  if(tokens[0] === '') {
-    count--;
-  }
-  if(tokens[tokens.length - 1] === '') {
-    count--;
+  // split the text on spaces
+  var tokens = text.split(' ');
+
+  // count the non-empty words
+  var count = 0;
+  for(var index = 0; index < tokens.length; index++) {
+    if(tokens[index]) {
+      count++;
+    }
   }
   return count;
 }
@@ -141,24 +141,18 @@ based on word boundaries:
 
 ```javascript.interactive
 var wordCount = function(text) {
-  var inWord = false;
   var count = 0;
+  var previous = ' '
 
   for(var index = 0; index < text.length; index++) {
-    var alphaNumeric = !!text[index].match(/\w/);
-    // start of a new word
-    if(alphaNumeric && !inWord) {
-      inWord = true;
-    }
-    // end of the current word
-    else if(!alphaNumeric && inWord) {
-      inWord = false;
+    // count spaces that are preceded by non-whitespace
+    if((text[index] === ' ') && (previous !== ' ')) {
       count++;
     }
   }
 
   // handle trailing word
-  if(inWord) {
+  if(previous !== ' ') {
     count++;
   }
 
@@ -173,12 +167,16 @@ edge cases.
 
 ```javascript.interactive
 var wordCount = function(text) {
-  // \W matches non-word characters, match one or more
-  var tokens = text.split(/\W+/);
-  // account for empty elements at the start or end of the list
-  var count = tokens.length;
-  if(tokens[0] === '') count--;
-  if(tokens[tokens.length - 1] === '') count--;
+  var count = 0;
+  var previous = ' '
+  for(var index = 0; index < text.length; index++) {
+    if((text[index] === ' ') && (previous !== ' ')) {
+      count++;
+    }
+  }
+  if(previous !== ' ') {
+    count++;
+  }
   return count;
 }
 
