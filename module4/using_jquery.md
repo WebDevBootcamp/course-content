@@ -291,9 +291,21 @@ var message = $('<div class="alert alert-success">')
   .appendTo(div);
 ```
 
-> This is one are that can have performance considerations depending on
+> This is one area that can have performance considerations depending on
 > how you write your code. It is important to cause browser reflow events
 > as infrequently as possible.
+
+```javascript.interactive
+var div = $('.example');
+
+// this example renders the page twice
+var first = $('<ul>');
+first.appendTo(div).append('<li>First</li>');
+
+// this only updates the page once when the entire list is added
+var second = $('<ol>');
+second.append('<li>Second</li>').appendTo(div);
+```
 
 ### Moving Elements
 
