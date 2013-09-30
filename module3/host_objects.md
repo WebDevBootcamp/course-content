@@ -81,7 +81,7 @@ The `document` property represents the actual page that is loaded in the
 browser. This is the main interaction from JavaScript to the markup (HTML)
 and styles (CSS) you worked with in previous sections.
 
-For instance, the `querySelector` method returnss the first DOM node on the
+For instance, the `querySelector` method returns the first DOM node on the
 page that matches a particular selector:
 
 ```javascript.interactive
@@ -93,14 +93,39 @@ return document.querySelector('p');
 We'll go through this in a lot more detail when we get to the section on
 jQuery.
 
+### The Document Object Model (DOM)
+
+The DOM is the mirror of the HTML elements on a page in the JavaScript
+environment. For instance, `document.body` returns the body element that
+contains the page content.
+
+This interaction is the foundation for the interactive capabilities for
+writing dynamic applications in JavaScript.
+
+DOM elements allow a wide range of capabilities:
+
+* Add/remove content in the page
+* Modify CSS classes and styles dynamically
+* Register event handlers to repond to user input
+
+For instance, elements have a `click` event that is fired when the user
+clicks the content with their mouse. The HTML can specify an `onclick`
+handler which is code that will be executed when the event occurs.
+
+```html.interactive
+<button onclick="alert('DOM event handler')">Click Me!</button>
+```
+
+We'll see a better way to do this with jQuery.
+
 ## The navigator Object
 
 The `navigator` property provides access to specific details and features of
 the particular web browser hosting the page. The actual details can vary
 between Chrome, IE, Firefox, etc.
 
-The most common use is to access the `userAgent` property to detect the
-current browser.
+One common use is to access the `userAgent` property to detect the current
+browser:
 
 ```javascript.interactive
 if(navigator.userAgent.match(/i(Pod|Pad|Phone)/i)) {
@@ -113,4 +138,13 @@ return navigator.userAgent;
 > availability of individual features and fall back gracefully. This is
 > because the user agent can be *spoofed* by the browser, so it is not
 > particularly reliable.
+
+This object also exposes many features of the browser, such as access to
+the camera, location services, and other new features.
+
+```javascript.interactive
+navigator.geolocation.getCurrentPosition(function(details) {
+  console.log(JSON.stringify(details));
+});
+```
 

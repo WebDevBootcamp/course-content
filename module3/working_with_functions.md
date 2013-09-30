@@ -299,15 +299,15 @@ reasons:
 
 ```javascript.interactive
 // asynchronous example
-var asyncFunction = function(input, callback) {
+var asyncFunction = function(callback) {
   // do something that is not available immediately
   setTimeout(callback, 1000);
 }
 console.log('before invoke');
 
 // setup a callback function and invoke the method
-asyncFunction( 'Second', function(message) {
-  console.log('got: ' + message);
+asyncFunction(function(message) {
+  console.log('in callback');
 });
 
 
