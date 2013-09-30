@@ -29,14 +29,14 @@ These activities cover an introduction to writing programs using JavaScript
 This section expands on the previous activities to write useful functions with
 JavaScript
 
-* [Creating Objects and Modules](?md=/course-content/module4/creating_objects_and_modules.md) -
-  Objects are a great way to organize code so it is easier to test and
-  maintain.
 * [Using jQuery](?md=/course-content/module4/using_jquery.md) -
   jQuery is the de-facto standard API for manipulating the DOM using JavaScript
 * [Event Handling](?md=/course-content/module4/event_handling.md) -
   Responding to user input and actions is a key part of making pages and
   applications that can interact with the user.
+* [Creating Objects and Modules](?md=/course-content/module4/creating_objects_and_modules.md) -
+  Objects are a great way to organize code so it is easier to test and
+  maintain.
 * [Asynchronous Programming](?md=/course-content/module4/asynchronous_programming.md) -
   Understanding asynchronous behavior in JavaScript is essential to writing
   responsive applications

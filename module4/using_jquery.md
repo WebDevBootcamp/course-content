@@ -20,8 +20,19 @@ so understanding how it works is essential for developing web applications.
 
 jQuery is written in JavaScript, so of course you can do everything it does
 using native methods. However, there are a great number of browser limitations,
-inconsistancies, bugs, etc. that are handled automatically by jQuery and without
-it you would be forced to handle these issues yourself.
+inconsistancies, bugs, etc. that are handled automatically by jQuery and
+without it you would be forced to handle these issues yourself.
+
+Some of the main features are:
+
+* Powerful DOM selection, traversal, and manipulation capabilities.
+* Simplified usage of built-in browser events, along with the ability to 
+  define your own
+* Common animations and transitions for elements
+* Improved AJAX support over raw JavaScript capabilities
+* Wide list of jQuery plug-ins to provide additional capabilities
+* Several useful utilities, along with helpful capabilities for dealing with
+  multiple browsers
 
 ## Including jQuery
 
@@ -56,40 +67,256 @@ In addition, many popular JavaScript libraries can be referenced from a
 This can improve performance from your users if the script is already cached by
 the browser from another site that uses the same reference.
 
+## Using jQuery
+
+jQuery registers itself in the `window.jQuery` object, but is more commonly
+accessed using the a dollar sign (`$`). Many common libraries export a one
+character shortcut that reduces the code needed throughout an application.
+
+jQuery is accessed in two ways:
+
+* As helper methods that are properties of the jQuery object (`$.ajax`, etc)
+* As a function to operate on the DOM (`$(selector)`)
+
+In some cases you might be using other applications that use `$` for other
+functionality, and there are various ways to use the libraries to avoid
+conflicts. This is pretty rare in practice however.
+
 ## Document Ready Event
 
-The browser performs many actions as a page loads, and the page is not
-necessarily completely loaded when a script is first evaluated. jQuery provides
-a ready function that will execute callbacks after all resources are available
-and the document is loaded, which is a better place for your code to begin
-executing:
+We saw the `window.ready` callback earlier, which is fired by the browser
+after all content is loaded and an application can begin. This is simply a
+property of the window object, so only one callback can be registered, which
+causes problems for applications that include many different scripts.
+
+jQuery provides an event mechanism that allows multiple callbacks to be
+executed when an event occurs. There are two variants in this case:
 
 ```html
 <script>
-  // code here is executed right away, and some resources 
-  // may not be available
+  // use the generic 'on' method to register a callback
+  $(document).on( 'ready', function() {
+    // start the application here
+  });
 
-  // add a callback to the ready function
-  $(document).ready( function() {
-    // code here is executed when the page is ready
+  // or use the helper method that exposes the ready event directly
+  $(document).ready(function() {
+    // this will also get called, after the first handler
   });
 </script>
 ```
 
 ## Selectors
 
+One nice feature of jQuery is that it builds on CSS selectors, so you are
+already familiar with a lot of the syntax from working with stylesheets.
+
+```html.interactive.onload
+<ul class="list">
+  <li>First</li>
+  <li class="active">Second</li>
+  <li>Third</li>
+</ul>
+```
+
+```javascript.interactive
+var active = $('li.active');
+console.log(active);
+return active.length;
+```
+
 ### The jQuery Object
+
+The `$()` function returns a jQuery object, which then supports various
+operations on the elements that matched the selector.
+
+As we saw with the previous example, the jQuery object acts as an array,
+where the items are the DOM elements that matched the selector.
+
+One key feature is that any manipulation methods are applied to all of the
+matching elements, which makes bulk changes much simpler.
+
+```html.interactive.onload
+<ul class="list">
+  <li>First</li>
+  <li class="active">Second</li>
+  <li>Third</li>
+</ul>
+```
+
+```javascript.interactive
+var items = $('ul.list li');
+items.css('border', '1px solid red');
+```
+
+### Chaining
+
+There are several ways to create a jQuery object:
+
+* `$('selector')` - Executes a CSS query against the current document and
+  returns the elements that match.
+* `$(element)` - Converts an existing DOM element into a jQuery object, ie:
+  `$(document)`
+* `$('html fragment')` - Used to create new DOM elements by providing a
+  markup fragment
+
+jQuery implements what is known as a *chainable* API, which means that all
+methods return the jQuery object being manipulated so you can perform
+multiple operations easily:
+
+```javascript.interactive
+$('<button>')
+  .text('Dynamic Button')
+  .addClass('btn')
+  .appendTo(document.body);
+```
 
 ## Manipulation
 
+Basically any aspect of an element [can be changed](http://api.jquery.com/category/manipulation/)
+using jQuery.
+
+The `css` method is used to set CSS properties on an element, either with a
+key/value pair of a single property to change, or an object specifying
+multiple styles:
+
+```html.interactive.onload
+<div class="example">
+  Dynamic CSS - plain at first, but can be styled in code
+</div>
+```
+
+```javascript.interactive
+$('div.example').css({
+  border: '1px solid black',
+  'background-color': '#eee',
+  padding: '10px'
+});
+```
+
+> It's generally recommended to use `addClass` and `removeClass` instead of
+> directly modifying CSS in code. This allows you to keep style definitions
+> separate
+
+### Attributes and Position
+
+The `attr` method is very similar to `css`, except it sets HTML attributes
+on elements.
+
+```html.interactive.onload
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+  </div>
+  <div>
+    <label for="active">Active?</label>
+    <input id="active" type="checkbox" />
+  </div>
+</form>
+```
+
+```javascript.interactive
+$('#active').attr('checked', true);
+return $('#name').val();
+```
+
 ## Traversal
 
-## Chaining
+jQuery provides a [large number of methods](http://api.jquery.com/category/traversing/)
+to find elements in a document. This is often used in event handlers to
+handle things like *find the parent list item that contains the clicked
+button*, etc.
 
-## Chaning the DOM
+```html.interactive.onload
+<ul class="example">
+  <li class="odd">Orange</li>
+  <li class="even">Green</li>
+  <li class="odd">Blue</li>
+</ul>
+```
+
+```javascript.interactive
+var list = $('ul.example');
+var oddItems = list.find('.odd');
+var evenItems = list.find('.even');
+console.log(oddItems);
+console.log(evenItems);
+```
+
+## Changing the DOM
+
+In addition to manipulating existing content, jQuery is frequently used to
+add and remove elements from the document. This is the beginning step for
+truly dynamic web applications.
+
+Many HTML5-only applications are rendered entirely using this or similar
+mechanisms - there is no content in the HTML page initially, and everything
+is generated in JavaScript after the page loads.
 
 ### Removing Content
 
-### Moving Elements
+Elements can be removed by calling the `remove` method, which takes them
+out of the page entirely. In some cases, the `show` and `hide` methods might
+be more appropriate to hide an element, but leave it in the document.
+
+```html.interactive.onload
+<span class="loud"><strong>Loud</strong></span>
+<span class="soft"><em>Soft</em></span>
+<span class="nerdy"><code>Nerdy</code></span>
+```
+
+```javascript.interactive
+$('.loud').remove();
+$('.soft').hide();
+```
 
 ### Generating New Content
+
+Creating new content is done by passing HTML fragments to the jQuery function
+and then inserting the element into the DOM.
+
+```html.interactive.onload
+<div class="example">
+</div>
+```
+
+```javascript.interactive
+var div = $('.example');
+div.append($('<button>Yes</button>'));
+
+// often you will use chaining to build more complicated content
+var message = $('<div class="alert alert-success">')
+  .text('Hopefully this works!')
+  .appendTo(div);
+```
+
+> This is one are that can have performance considerations depending on
+> how you write your code. It is important to cause browser reflow events
+> as infrequently as possible.
+
+### Moving Elements
+
+Using insertion methods on existing elements will move them to a new location
+in the document. This can often be faster than deleting the content and
+rebuilding it in the new location.
+
+```html.interactive.onload
+<ul class="example">
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ul>
+```
+
+```javascript.interactive
+var first = $('ul.example li').first();
+first.appendTo($('ul.example'));
+```
+
+You can also `clone` elements and copy the data elsewhere on the page:
+
+```javascript.interactive
+var first = $('ul.example li').first();
+first.clone().appendTo($('ul.example'));
+```
