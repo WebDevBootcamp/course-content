@@ -9,6 +9,11 @@ It was created by John Resig in 2005, released in January of 2006.
 > Note that [jQuery UI](http://jqueryui.com/), a library you will probably see
 > in various places, is an additional library built on top of code jQuery.
 
+Learning objectives:
+
+* Understand the benefit of using jQuery on a website
+* Use jQuery objects to select and manipulate content on a page
+
 Activity reading:
 
 * <http://learn.jquery.com/using-jquery-core/>
@@ -219,6 +224,43 @@ on elements.
 ```javascript.interactive
 $('#active').attr('checked', true);
 return $('#name').val();
+```
+
+### Element Content
+
+There are also several ways to change the content of existing elements on
+a page. The basic choice is to use the `text` method to get and set the
+content of an element:
+
+```html.interactive.onload
+<div class="example">Original Content</div>
+```
+
+```javascript.interactive
+var div = $('.example');
+console.log('Content before: ' + div.text());
+div.text('Changed to something else');
+console.log('Content after: ' + div.text());
+```
+
+Notice that calling `text()` with no arguments returns the current value for
+the element, and passing in an argument will change it. This is a common
+convention for jQuery methods that get and set values.
+
+### Complex Content
+
+The `text` method only operates on simple text values, in fact it will escape
+HTML control characters (*>* is changed to *&gt;*, etc.). The `html` function
+works similarly to `text`, but allows you to pass formatted HTML content that
+will not get escaped.
+
+```html.interactive.onload
+<div class="example">Original Content</div>
+```
+
+```javascript.interactive
+var div = $('.example');
+div.html('<strong>It is now:</strong> ' + new Date());
 ```
 
 ## Traversal
