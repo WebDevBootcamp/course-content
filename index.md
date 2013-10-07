@@ -34,6 +34,8 @@ JavaScript
 * [Event Handling](?md=/course-content/module4/event_handling.md) -
   Responding to user input and actions is a key part of making pages and
   applications that can interact with the user.
+* [jQuery Exercises](?md=/course-content/module4/jquery_exercises.md) -
+  A collection of exercises to practice common jQuery patterns.
 * [Creating Objects and Modules](?md=/course-content/module4/creating_objects_and_modules.md) -
   Objects are a great way to organize code so it is easier to test and
   maintain.
