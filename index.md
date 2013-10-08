@@ -36,16 +36,13 @@ JavaScript
   applications that can interact with the user.
 * [jQuery Exercises](?md=/course-content/module4/jquery_exercises.md) -
   A collection of exercises to practice common jQuery patterns.
-* [Creating Objects and Modules](?md=/course-content/module4/creating_objects_and_modules.md) -
-  Objects are a great way to organize code so it is easier to test and
-  maintain.
-* [Asynchronous Programming](?md=/course-content/module4/asynchronous_programming.md) -
-  Understanding asynchronous behavior in JavaScript is essential to writing
-  responsive applications
 * [Accessing Server Resources](?md=/course-content/module4/accessing_server_resources.md) -
   Up to this point we've been dealing with one half of the web application
   landscape - almost all applications will also need to access resources that
   are provided by separate server instance
+* [Creating Objects and Modules](?md=/course-content/module4/creating_objects_and_modules.md) -
+  Objects are a great way to organize code so it is easier to test and
+  maintain.
 * [JavaScript Frameworks](?md=/course-content/module4/javascript_frameworks.md) -
   JavaScript frameworks are a dime a dozen, but many exist to fill in or improve
   on shortcomings of the underlying runtime environment
