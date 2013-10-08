@@ -29,7 +29,7 @@ div.test1
 </ul>
 </div>
 
-<div class="test1 sample-box highlight">
+<div class="test2 sample-box highlight">
 div.test2
 <ol>
   <li>li</li>
