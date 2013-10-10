@@ -19,6 +19,24 @@ useful pattern to solve many common problems.
 
 * <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain>
 
+## Why Object Oriented?
+
+OO code offers a nice way to map the concepts and problems we are trying to
+solve onto the code within an application. Most programs deal with various
+*objects*, so creating similar code structures can be helpful.
+
+Ideally we want to have code that looks like:
+
+```javascript
+var book = library.findBook('Eloquent JavaScript');
+if(book.isCheckedIn()) {
+  book.reserve({ user: currentUser, location: 'Main' });
+}
+```
+
+Notice that the method names `findBook`, `isCheckedIn`, etc. provide an
+intuitive way to work with the objects in question.
+
 ## Defining Objects
 
 Classes in JavaScript are simply objects with properties that are references
@@ -58,7 +76,7 @@ function Vehicle() {
   this.name = 'vehicle';
 }
 Vehicle.prototype.drive = function(){
-  console.warn('Driving ' + this.name);
+  console.log('Driving ' + this.name);
 }
 function Car() {
   this.name = 'car';
@@ -66,7 +84,7 @@ function Car() {
 // copy functions from Vehicle
 Car.prototype = new Vehicle();
 Car.prototype.start = function() {
-  console.warn('Start ' + this.name);
+  console.log('Start ' + this.name);
 }
 
 var car = new Car();
@@ -83,17 +101,19 @@ to standardize these conventions, and simplify the syntax.
 However, overridding base class functions is awkward at best:
 
 ```javascript.interactive
-function A() {}
-A.prototype.format = function() { return 'A'; }
+function Car() {}
+Car.prototype.start = function() { console.log('Starting the car'); }
 
-function B() {}
-B.prototype = new A();
-B.prototype.format = function() {
+function SportsCar() {}
+// extend the Car prototype
+SportsCar.prototype = new Car();
+SportsCar.prototype.start = function() {
+  console.log('Starting the sportscar');
+
   // need explicit reference to base class to invoke
-  var base = A.prototype.format.call(this);
-  return base + '+B';
+  Car.prototype.start.call(this);
 };
-return (new B).format();
+return (new SportsCar).start();
 ```
 
 ### Object Prototype
@@ -144,12 +164,15 @@ refers to the current object within the methods defined by the class. This
 is essential for each instance to maintain it's own state.
 
 ```javascript.interactive
-function Test(key) {
-  this.key = key;
+function Test(value) {
+  this.value = value;
 }
-var first = new Test('First');
-var second = new Test('Second');
-return 'First: ' + first.key + ' - Second: ' + second.key;
+Test.prototype.double = function() {
+  return this.value * 2;
+}
+var first = new Test(123);
+var second = new Test(456);
+return 'First: ' + first.double() + ' - Second: ' + second.double();
 ```
 
 ### Obtaining this
@@ -186,17 +209,17 @@ object method do not inherit the parent function's `this` reference:
 function Test(key) {
   this.key = key;
 }
-Test.prototype.doInvoke = function() {
-  var logValue = function(value) {
-    // 'this' is null in this context because logValue was invoked
+Test.prototype.toString = function() { return '[Test: ' + this.key + ']'; }
+Test.prototype.doCallback = function() {
+  var callback = function(value) {
+    // 'this' is undefined in this context because the callback was invoked
     // directly
-    console.log('anonymous this: ' + this + ' - ' + value);
+    console.log('in callback: ' + this + ' - ' + value);
   }
   // 'this' refers to the class instance in this scope
-  console.log('instance this: ' + this + ' - ' + this.key);
-  logValue(this.key);
+  callback(this.key);
 };
-(new Test('this?')).doInvoke();
+(new Test('abc')).doCallback();
 ```
 
 ### Caching this
@@ -217,7 +240,7 @@ Test.prototype.callbackTest = function() {
   var that = this;
   var callback = function() {
     // 'this' is null here, but 'that' is the correct reference
-    console.warn('inside callback: ' + that.key)
+    console.log('inside callback: ' + that.key)
   }
   // invoke the callback
   callback()
@@ -271,7 +294,44 @@ function InternalState() {
   this._dontTouch = 123;
 }
 InternalState.prototype.incrementValue = function(amount) {
-  this._dontTouch += amount;
+  return this._dontTouch += amount;
 }
+var state = new InternalState();
+return state.incrementValue(12);
 ```
+
+### Module Pattern
+
+There is an alternate mechanism for defining objects in JavaScript that
+supports internal state using a closure, making it inaccessible outside the
+class.
+
+The basic pattern looks like:
+
+```javascript.interactive
+function Car(make, model) {
+  // variables in this scope are inaccessible
+  var name = make + ' - ' + model;
+
+  var startCar = function() {
+    console.log('Starting: ' + name);
+  }
+  var driveCar = function() {
+    console.log('Driving: ' + name);
+  }
+
+  // return the public interface
+  return {
+    start: startCar,
+    drive: driveCar
+  };
+}
+var test = new Car('AMC', 'Gremlin');
+test.start();
+test.drive();
+```
+
+The drawbacks to this pattern are that it requires a lot of boilerplate and
+duplication to accomplish, and it's even more awkward than the prototype
+pattern to extend classes.
 
