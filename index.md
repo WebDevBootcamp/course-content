@@ -47,3 +47,8 @@ JavaScript
   JavaScript frameworks are a dime a dozen, but many exist to fill in or improve
   on shortcomings of the underlying runtime environment
 
+## Module6 - Thinking Like a Developer
+
+* [Unit Testing](?md=/course-content/module6/unit_testing.md) -
+  Writing automated tests for JavaScript applications is an essential part
+  of creating robust and maintainable applications.
