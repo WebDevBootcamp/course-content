@@ -16,7 +16,7 @@ Last Night of Class!
 * Evaluation for Module 6
 * Class Starts Now!
 
-## Final Exam - Linux Kernal Hack
+## Final Exam - Linux Kernel Hack
 
 > if ((options == (__WCLONE|__WALL)) && (current->uid = 0))
 
