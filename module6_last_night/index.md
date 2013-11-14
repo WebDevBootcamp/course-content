@@ -31,11 +31,19 @@ Info: [Slashdot Article](http://slashdot.org/story/13/10/09/1551240/the-linux-ba
 
 The world is getting more complex. You need to get simpler (and clearer). Be terse, but detailed! And communicate _richly_ with your users/clients!
 
+__Status updates!__
+
 ![Status updates!](/img/napw_project_plan_snapshot.png)
+
+__Mockups!__
 
 ![Mockups!](/img/ctms_snapshot.png)
 
+__Spec docs!__
+
 ![Spec Docs!](/img/sample_spec.png)
+
+__Emails!__
 
 ![Emails!](/img/email.png)
 
@@ -58,4 +66,4 @@ Module 6 Evaluation Form: [http://goo.gl/fbdstK](http://goo.gl/fbdstK)
 
 ## Class Starts Now!
 
-As the old saying goes...class starts _now_. Congratulations! 
+As the old saying goes...class starts _now_ . Congratulations! 
