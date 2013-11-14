@@ -35,14 +35,18 @@ __Status updates!__
 
 ![Status updates!](/img/napw_project_plan_snapshot.png)
 
+---
+
 __Mockups!__
 
 ![Mockups!](/img/ctms_snapshot.png)
 
+---
 __Spec docs!__
 
 ![Spec Docs!](/img/sample_spec.png)
 
+---
 __Emails!__
 
 ![Emails!](/img/email.png)
