@@ -12,7 +12,9 @@ Last Night of Class!
 * Final Exam - Linux Kernel Hack
 * Developer Communication
 * The (A) Software Development Lifecycle
+* Q & A
 * Evaluation for Module 6
+* Class Starts Now!
 
 ## Final Exam - Linux Kernal Hack
 
@@ -27,7 +29,15 @@ Info: [Slashdot Article](http://slashdot.org/story/13/10/09/1551240/the-linux-ba
 
 ## Developer Communication
 
-Be clear!
+The world is getting more complex. You need to get simpler (and clearer). Be terse, but detailed! And communicate _richly_ with your users/clients!
+
+![Status updates!](/img/napw_project_plan_snapshot.png)
+
+![Mockups!](/img/ctms_snapshot.png)
+
+![Spec Docs!](/img/sample_spec.png)
+
+![Emails!](/img/email.png)
 
 ## The (A) Software Development Lifecycle
 
@@ -35,8 +45,17 @@ Be clear!
 
 * Test-driven development shop
 * Tools: SVN, MXUnit (part of the "[xUnit](http://en.wikipedia.org/wiki/XUnit) Family"), [Jenkins](http://jenkins-ci.org/)/[Ant](http://en.wikipedia.org/wiki/Apache_Ant) (continuous integration)
-* 
+* User acceptance testing/staging.
+* Launch! 
+
+## Q & A
+
+Last chance! Any remaining questions? Comments? Commentary? Concerns?
 
 ## Evaluation for Module 6
 
 Module 6 Evaluation Form: [http://goo.gl/fbdstK](http://goo.gl/fbdstK) 
+
+## Class Starts Now!
+
+As the old saying goes...class starts _now_. Congratulations! 
