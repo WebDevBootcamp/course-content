@@ -18,7 +18,7 @@ Last Night of Class!
 
 ## Final Exam - Linux Kernal Hack
 
-if ((options == (__WCLONE|__WALL)) && (current->uid = 0))
+> if ((options == (__WCLONE|__WALL)) && (current->uid = 0))
 
 Info: [Slashdot Article](http://slashdot.org/story/13/10/09/1551240/the-linux-backdoor-attempt-of-2003)
 
