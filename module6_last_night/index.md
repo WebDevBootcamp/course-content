@@ -1,30 +1,25 @@
-# FRCC WebLab - Module 1
+# FRCC WebLab - Last Night!
 
 Welcome to the Front Range Community College WebLab!
 
-Week 1 - Introduction to Web Development
+Last Night of Class!
 
 ![FRCC Weblab Logo](/img/frcc_weblab_logo.jpg)
 
 ## Tonight
 
-* Welcome and introductions
-* Week 1 Outline
-* Course Outline
-* Gettting Started
+* I wore a shirt with a tie to commemorate the event!
+* Final Exam - Linux Kernel Hack
+* Developer Communication
+* The (A) Software Development Lifecycle
 
-## Week 1 Outline
+## Final Exam - Linux Kernal Hack
 
-* History of the web/Internet (and the history of computing that’s most relevant to the web) 
-* Lifecycle of a request (or “LOAR”) 
-* Plumbing (protocols, standards, wiring, etc.)
-* Servers and server-side concepts
-* Clients and client-side concepts
-* Jobs and roles in web development
-* Thinking and acting like a developer 
-* Sample application (to-do list app) 
+if ((options == (__WCLONE|__WALL)) && (current->uid = 0))
 
-## Course Outline
+Info: [Slashdot Article](http://slashdot.org/story/13/10/09/1551240/the-linux-backdoor-attempt-of-2003)
+
+## Developer Communication
 
 Here’s the outline for the rest of the course (6 modules):
 
@@ -35,7 +30,7 @@ Here’s the outline for the rest of the course (6 modules):
 5. UI/UX Design
 6. Thinking Like A Developer
 
-## Your Instructors
+## The (A) Software Development Lifecycle
 
 And all of this wisdom will be transmitted to you by the following seers (present company excepted, of course):
 
