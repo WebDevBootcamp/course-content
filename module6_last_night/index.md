@@ -53,12 +53,22 @@ __Emails!__
 
 ## The (A) Software Development Lifecycle
 
-"The Webapper Way"
+__"The Webapper Way"__
 
 * Test-driven development shop
 * Tools: SVN, MXUnit (part of the "[xUnit](http://en.wikipedia.org/wiki/XUnit) Family"), [Jenkins](http://jenkins-ci.org/)/[Ant](http://en.wikipedia.org/wiki/Apache_Ant) (continuous integration)
 * User acceptance testing/staging.
 * Launch! 
+
+---
+
+![Jenkins CI](/img/jenkins.png)
+
+---
+
+Process looks like this:
+
+Discovery (IDD, mockups/wireframes, storyboards) --> Documentation --> Unit Tests (class diagrams, data schema, etc.) --> Development / Unit Testing --> Staging / User Acceptance Testing --> Launch!
 
 ## Q & A
 
