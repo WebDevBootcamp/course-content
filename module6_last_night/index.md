@@ -62,7 +62,7 @@ __"The Webapper Way"__
 
 ---
 
-![Jenkins CI](/img/jenkins.png)
+![Jenkins CI](/img/Jenkins.png)
 
 ---
 
