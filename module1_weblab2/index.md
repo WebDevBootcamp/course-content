@@ -1,6 +1,6 @@
 # FRCC WebLab - Module 1
 
-Welcome to the Front Range Community College WebLab!
+Welcome to the Front Range Community College WebLab - Spring 2014!
 
 Week 1 - Introduction to Web Development
 
@@ -8,11 +8,14 @@ Week 1 - Introduction to Web Development
 
 ## Tonight
 
-* Welcome and introductions
-* Week 1 Outline
-* Course Outline
-* Gettting Started
+* Welcome back!
+* Questions/comments/commentary/concerns from intro night?
+* Tonight:
+  * History of the web/Internet (and the history of computing that’s most relevant to the web)
+  * Lifecycle of a request (or “LOAR”)
+  * Plumbing (protocols, standards, wiring, etc.)
 
+<!-- Covered on intro night
 ## Week 1 Outline
 
 * History of the web/Internet (and the history of computing that’s most relevant to the web) 
@@ -34,6 +37,8 @@ Here’s the outline for the rest of the course (6 modules):
 4. More Javascript
 5. UI/UX Design
 6. Thinking Like A Developer
+
+-->
 
 ## Your Instructors
 
@@ -59,15 +64,17 @@ And all of this wisdom will be transmitted to you by the following seers (presen
 I've developed production software using:
 
 * Java (desktop, servlets, JSP)
-* ColdFusion (CFML)
+* ColdFusion (CFML - full-featured language (or "abstraction layer") that "sits" on top of Java)
 * Javascript
 * Actionscript/MXML
 * Google Apps Script
 * VB Script
+* [SQL](http://en.wikipedia.org/wiki/SQL) 
 * XML
 * CSS
 * HTML
 * Delphi
+* [Lasso](http://en.wikipedia.org/wiki/Lasso_(programming_language))
 
 ## Open Kimono
 
