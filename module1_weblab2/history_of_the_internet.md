@@ -37,7 +37,9 @@ Highlights:
 
 ![First-Ever Photo Posted on the Web](/img/first_www_picture.jpg)
 
+## History of the Internet
 
+[Movie time!](https://www.youtube.com/watch?v=9hIQjrMHTv4)
 
 ## Reach vs. Rich
 
