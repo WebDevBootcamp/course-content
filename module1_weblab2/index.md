@@ -112,7 +112,7 @@ Why do you want to be a web developer? Based on your understanding of it so far,
 
 ## Next: History of the Internet
 
-[History of the Internet](?md=/course-content/module1/history_of_the_internet.md)
+[History of the Internet](?md=/course-content/module1_weblab2/history_of_the_internet.md)
 
 
 
