@@ -36,4 +36,4 @@ Github accounts for everyone!
 
 ## Next: TodoMVC Sample Application
 
-[TodoMVC Sample Application](?md=/course-content/module1/todomvc_sample_application.md)
+[TodoMVC Sample Application](?md=/course-content/module1_weblab2/todomvc_sample_application.md)

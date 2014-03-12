@@ -27,4 +27,4 @@ Look inside a real app server.
 
 ## Next: Clients & Client-Side Concepts
 
-[Clients & Client-Side Concepts](?md=/course-content/module1/clients_and_client-side_concepts.md)
+[Clients & Client-Side Concepts](?md=/course-content/module1_weblab2/clients_and_client-side_concepts.md)

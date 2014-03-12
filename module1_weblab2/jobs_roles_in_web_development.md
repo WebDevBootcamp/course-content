@@ -11,4 +11,4 @@ FRCC Cool Careers Camp
 
 ## Next: Thinking & Acting Like A Developer
 
-[Thinking & Acting Like A Developer](?md=/course-content/module1/thinking_and_acting_like_a_developer.md)
+[Thinking & Acting Like A Developer](?md=/course-content/module1_weblab2/thinking_and_acting_like_a_developer.md)

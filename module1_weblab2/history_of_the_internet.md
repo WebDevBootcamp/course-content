@@ -76,4 +76,4 @@ Congratulations! You’re entering one of the premiere occupations of the 21st c
 
 ## Next: Lifecycle of a Request
 
-[Lifecycle of a Request](?md=/course-content/module1/lifecycle_of_a_request.md)
+[Lifecycle of a Request](?md=/course-content/module1_weblab2/lifecycle_of_a_request.md)

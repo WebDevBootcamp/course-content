@@ -69,4 +69,4 @@ Great recent video on Chrome developer tools:
 
 ## Next: Plumbing
 
-[Internet Plumbing](?md=/course-content/module1/plumbing.md)
+[Internet Plumbing](?md=/course-content/module1_weblab2/plumbing.md)
