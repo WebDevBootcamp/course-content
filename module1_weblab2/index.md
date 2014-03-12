@@ -1,4 +1,4 @@
-# FRCC WebLab - Module 1
+# FRCC WebLab 2 - Module 1
 
 Welcome to the Front Range Community College WebLab - Spring 2014!
 
@@ -90,6 +90,16 @@ Facebook: [http://www.facebook.com/IamSigmund](http://www.facebook.com/IamSigmun
 
 Office: 970.223.2278
 
+## Class Resources
+
+Google Docs folder:
+
+[Student Folder (read-only)](https://drive.google.com/folderview?id=0B0HFqOyOPltCSnpLMFpiUnFvbDg&usp=sharing)
+
+Basecamp:
+
+[WebLab - Spring 2014](https://basecamp.com/2565496/projects/5204169-weblab-spring-2014)
+
 ## Getting Started
 
 What does the Internet/web mean to you?
@@ -99,12 +109,6 @@ What’s your favorite part of the web? Why?
 What are examples of really excellent software/tools/services on the web?
 
 Why do you want to be a web developer? Based on your understanding of it so far, what piques your interest? 
-
-Google Docs folders:
-
-[Student Folder (read-only)](https://drive.google.com/folderview?id=0B0HFqOyOPltCYkIzYVB5VVU3a3M&usp=sharing)
-
-[Week 1 Folder (read-write)](https://drive.google.com/folderview?id=0B0HFqOyOPltCci1zSDUyNC1OSHc&usp=sharing)
 
 ## Next: History of the Internet
 

@@ -31,6 +31,14 @@ Highlights:
 * Commercialization of the web leads to “dot com bubble,” followed by a more “mature” web.
 * The web today—web 2.0 and beyond.
 
+## Late-Breaking News: Happy Birthday WWW
+
+[Fast Company Article on 25th Anniversary of the Web](http://www.fastcompany.com/3027557/fast-feed/happy-25th-birthday-world-wide-web-our-gift-an-intentionally-brief-history-of-you)
+
+![First-Ever Photo Posted on the Web](/img/first_www_picture.jpg)
+
+
+
 ## Reach vs. Rich
 
 ![FRCC Weblab Logo](/img/reach_vs_rich.gif)
