@@ -2,7 +2,8 @@
 
 ## Before We Begin
 
-Questions/comments/feedback?
+* Questions/comments/feedback?
+* Humor
 
 ## Lifecycle of a Request
 
