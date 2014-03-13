@@ -1,4 +1,10 @@
-# FRCC WebLab - Lifecycle of a Request
+# FRCC WebLab - 
+
+## Before We Begin
+
+Questions/comments/feedback?
+
+## Lifecycle of a Request
 
 Opinion poll: What happens when you click?
 
@@ -18,22 +24,15 @@ Responses:
 
 Source: [http://www.websiteoptimization.com/secrets/metrics/10-21-http-request.html](http://www.websiteoptimization.com/secrets/metrics/10-21-http-request.html)
 
-## Cleanup from Tuesday
-
-* Questions/comments/feedback?
-* Source control book
-* Tech trends video
-* Programming task!
-
-### Source control book
+## Source control book
 
 [ _Source Control by Example_ ](http://www.ericsink.com/vcbe/ ), by Eric Sink.
 
-### Tech trends video
+## Tech trends video
 
 [Techcrunch Video](http://techcrunch.com/2011/10/11/keen-on-how-yahoo-screwed-up-and-lessons-for-other-silicon-valley-giants-tctv/)
 
-### First Programming Task
+## First Programming Task
 
 Roomies App (like Besties!)
 
