@@ -15,7 +15,7 @@ Week 1 - Introduction to Web Development
   * Lifecycle of a request (or “LOAR”)
   * Plumbing (protocols, standards, wiring, etc.)
 
-<!-- Covered on intro night -->
+<!--- Covered on intro night -->
 
 
 ## Week 1 Outline
