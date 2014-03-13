@@ -15,7 +15,9 @@ Week 1 - Introduction to Web Development
   * Lifecycle of a request (or “LOAR”)
   * Plumbing (protocols, standards, wiring, etc.)
 
-<!-- Covered on intro night
+<!-- Covered on intro night -->
+
+
 ## Week 1 Outline
 
 * History of the web/Internet (and the history of computing that’s most relevant to the web) 
@@ -38,7 +40,7 @@ Here’s the outline for the rest of the course (6 modules):
 5. UI/UX Design
 6. Thinking Like A Developer
 
--->
+
 
 ## Your Instructors
 
