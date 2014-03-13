@@ -15,7 +15,7 @@ Week 1 - Introduction to Web Development
   * Lifecycle of a request (or “LOAR”)
   * Plumbing (protocols, standards, wiring, etc.)
 
-<!--- Covered on intro night -->
+<!--- Covered on intro night 
 
 
 ## Week 1 Outline
@@ -28,6 +28,8 @@ Week 1 - Introduction to Web Development
 * Jobs and roles in web development
 * Thinking and acting like a developer 
 * Sample application (to-do list app) 
+
+-->
 
 ## Course Outline
 
