@@ -1,4 +1,4 @@
-# FRCC WebLab - 
+# FRCC WebLab - Lifecycle of a Request
 
 ## Before We Begin
 
