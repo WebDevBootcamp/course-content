@@ -2,7 +2,7 @@
 
 Welcome to the Front Range Community College WebLab!
 
-Last Night of Class!
+Last Night of Module 1!
 
 ![FRCC Weblab Logo](/img/frcc_weblab_logo.jpg)
 
@@ -13,7 +13,7 @@ Last Night of Class!
 * Developer Communication
 * The (A) Software Development Lifecycle
 * Q & A
-* Evaluation for Module 6
+* Evaluation for Module 1
 * Class Starts Now!
 
 ## Final Exam - Linux Kernel Hack
@@ -76,8 +76,10 @@ Last chance! Any remaining questions? Comments? Commentary? Concerns?
 
 ## Evaluation for Module 6
 
-Module 6 Evaluation Form: [http://goo.gl/fbdstK](http://goo.gl/fbdstK) 
+Module 6 Evaluation Form: [http://goo.gl/IueCvk](http://goo.gl/IueCvk) 
 
 ## Class Starts Now!
 
 As the old saying goes...class starts _now_ . Congratulations! 
+
+Note: This line works much better if it's _actually_ the last night of class. 
