@@ -37,7 +37,7 @@ Example self-closing tags: <br/> <img src='pic.jpg'/>
 ```
 
 ## Minimal correct HTML document
-An HTML document must be contained within an <html> element. The top level must contain two elements, a <head> and a <body>. The head must contain a <title> and can contain other meta-data. The body contains the content that will be displayed.
+An HTML document must be contained within an <html> element. The top level must contain two elements, a 'head' and a 'body'. The head must contain a 'title' and can contain other meta-data. The body contains the content that will be displayed.
 ```
 <html>
   <head>
