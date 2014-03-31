@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <p>Please enter your data below:</p>
+    <form action="myHandler.php" method="get" id="form1" name="form1">
+        <label for="buttonInput">Button:
+        </label>
+        <input type="button" id="buttonInput" name="buttonVal" value="buttonLabel" onclick="document.getElementById('form1').submit();">
+        <br/>
+        <label for="checkboxInput">Checkbox:
+        </label>
+        <input type="checkbox" id="checkboxInput" name="checkboxVal" checked="true">
+        <br/>
+        <label for="dateInput">Date:
+        </label>
+        <input type="date" id="dateInput" name="dateVal">
+        <br/>
+        <label for="datetimeInput">DateTime:
+        </label>
+        <input type="datetime" id="datetimeInput" name="datetimeVal">
+        <br/>
+        <label for="datetimelocalInput">DateTime-Local:
+        </label>
+        <input type="datetime-local" id="datetimelocalInput" name="datetimelocalValue">
+        <br/>
+        <label for="emailInput">Email:
+        </label>
+        <input type="email" id="emailInput" name="emailValue">
+        <br/>
+        <label for="fileInput">File:
+        </label>
+        <input type="file" id="fileInput" name="fileValue">
+        <br/>
+        <input type="hidden" id="hiddenInput" name="hiddenValue" value="hello">
+        <br/>
+        <label for="imageInput">Image:
+        </label>
+        <input type="image" src="f_logo.png" alt="submit">
+        <br/>
+        <label for="monthInput">Month:
+        </label>
+        <input type="month" id="monthInput" name="monthValue">
+        <br/>
+        <label for="numberInput">Number:
+        </label>
+        <input type="number" id="numberInput" name="numberValue">
+        <br/>
+        <label for="password">Password:
+        </label>
+        <input type="password" id="passwordInput" name="passwordValue">
+        <br/>
+        <label for="radioInput1">Radio - select one:
+        </label>
+        <input type="radio" id="radioInput1" name="radioValue" value="1">
+        <br/>
+        <label for="radioInput2">Radio - select two:
+        </label>
+        <input type="radio" id="radioInput2" name="radioValue" value="2">
+        <br/>
+        
+    </form>
+</body>
+</html>
