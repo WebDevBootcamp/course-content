@@ -12,6 +12,7 @@ Defines the behavior of the form
 input elements
 ...
 </form>
+```
 
 ### Form Attributes
 
