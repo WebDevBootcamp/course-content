@@ -23,6 +23,8 @@ These activities cover an introduction to writing programs using JavaScript
 * [Best Practices](?md=/course-content/module3/best_practices.md) -
   Before getting too deep into the dark reaches of the language, it might be
   helpful to step back a bit and think about some acknowledged best practices
+* [Object Modeling Practice](?md=/course-content/module3/object_modeling_practice.md) -
+  Basic exercises to work on representing information in code.
 
 ## Module4 - Applied JavaScript
 
