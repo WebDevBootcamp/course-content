@@ -16,10 +16,6 @@ These activities cover an introduction to writing programs using JavaScript
   the JavaScript language
 * [Working with Functions](?md=/course-content/module3/working_with_functions.md) -
   Unleash the power of JavaScript with functions!
-* [Host Objects](?md=/course-content/module3/host_objects.md) -
-  The JavaScript runtime within web browsers and other environments provides
-  built-in objects to perform common tasks and have access to the current
-  environment.
 * [Best Practices](?md=/course-content/module3/best_practices.md) -
   Before getting too deep into the dark reaches of the language, it might be
   helpful to step back a bit and think about some acknowledged best practices
@@ -31,6 +27,10 @@ These activities cover an introduction to writing programs using JavaScript
 This section expands on the previous activities to write useful functions with
 JavaScript
 
+* [Host Objects](?md=/course-content/module4/host_objects.md) -
+  The JavaScript runtime within web browsers and other environments provides
+  built-in objects to perform common tasks and have access to the current
+  environment.
 * [Using jQuery](?md=/course-content/module4/using_jquery.md) -
   jQuery is the de-facto standard API for manipulating the DOM using JavaScript
 * [Event Handling](?md=/course-content/module4/event_handling.md) -
