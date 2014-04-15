@@ -24,6 +24,8 @@ These activities cover an introduction to writing programs using JavaScript
   for finding, diagnosing, and fixing issues.
 * [Object Modeling Practice](?md=/course-content/module3/object_modeling_practice.md) -
   Basic exercises to work on representing information in code.
+* [Wrapup and Refresher](?md=/course-content/module3/javascript_refresher.md) -
+  Quick overview of the concepts covered up to this point.
 
 ## Module4 - Applied JavaScript
 
