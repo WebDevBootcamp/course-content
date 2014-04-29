@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+
+body {
+    width : 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#masthead {
+    background-color: #4b4b4b;
+    position: relative;
+    background: linear-gradient(to top right, #4b4b4b, #3a3a3a, #6e6e6e, #3a3a3a, #4b4b4b);
+    background: -webkit-linear-gradient(to top right, #4b4b4b, #3a3a3a, #6e6e6e, #3a3a3a, #4b4b4b);
+    background: -o-linear-gradient(to top right, #4b4b4b, #3a3a3a, #6e6e6e, #3a3a3a, #4b4b4b);
+    background: -moz-linear-gradient(to top right, #4b4b4b, #3a3a3a, #6e6e6e, #3a3a3a, #4b4b4b);
+}
+
+hgroup {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+    border: none;
+    padding-left: 5%;
+}
+
+a img {
+    border:none;
+    height: auto;
+    width: 40%;
+    max-width: 140px;
+    min-width: 100px;
+}
+
+.logo img {
+    vertical-align : bottom;
+    margin-top: -20px;
+}
+
+header {
+    width: 100%;
+    height: 25%;
+    min-height: 180px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.tagLine {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding-right: 5%;
+    line-height: 1.2em;
+    margin-top: -0.6em;
+    max-width: 50%;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Audiowide', 'sans-serif';
+}
+
+nav {
+    color: white;
+    height: 30px;
+    vertical-align: middle;
+    background: linear-gradient(to bottom, #4b4b4b, #6e6e6e, #4b4b4b);
+    background: -webkit-linear-gradient(#4b4b4b, #6e6e6e, #4b4b4b);
+    background: -o-linear-gradient(#4b4b4b, #6e6e6e, #4b4b4b);
+    background: -moz-linear-gradient(#4b4b4b, #6e6e6e, #4b4b4b);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+.mainMenuNav>li {
+    display: block;
+    float: left;
+    width: 10%;
+    min-width: 65px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 5px groove #6e6e6e;
+}
+
+.mainMenuNav>li:first-child {
+    border-left: 5px groove #6e6e6e;
+}
+
+.subMenuNav {
+    display: none;
+    padding: 8px 0px 0px 0px;
+}
+
+.subMenuNav>li {
+    display: block;
+    height: 24px;
+    width: 100%;
+    border-top: 2px groove #6b6b6b;
+    vertical-align: middle;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.subMenuNav>li:first-child {
+    margin-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#sidebar {
+    display: block;
+    float: right;
+    width: 20%;
+    max-width: 200px;
+    height: 70%;
+    border-left: 1px solid #4b4b4b;
+    background-color: #cccccc;
+    padding: 5px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 5px;
+}
+
+main {
+    height: 68%;
+    overflow:auto;
+    padding: 10px;
+    padding-left: 40px;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2%;
+    color: white;
+    background-color: #4b4b4b;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight:bold;
+    font-style:italic;
+    font-family:"Lobster Two", "Verdana", sans-serif;
