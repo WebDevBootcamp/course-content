@@ -15,9 +15,9 @@
         </label>
         <input type="button" id="buttonInput" name="buttonVal" value="buttonLabel" onclick="document.getElementById('form1').submit();">
         <br/>
+        <input type="checkbox" id="checkboxInput" name="checkboxVal" checked="true">
         <label for="checkboxInput">Checkbox:
         </label>
-        <input type="checkbox" id="checkboxInput" name="checkboxVal" checked="true">
         <br/>
         <label for="dateInput">Date:
         </label>
@@ -67,8 +67,39 @@
         <br/>
         
         <label for="selectInput">Choose from list
-        </label><select>
+        </label>
+        <select name='selectValue'>
+          <option value='1'>One</option>
+          <option value='2'>Two</option>
+          <option value='3'>Three</option>
+          <option value='4'>Four</option>
+          <option value='5'>Five</option>
         </select>
+        <input type='color' name='colorValue' value='#ff0000'>
+        <input type='submit' name='submit' value='Submit'>
     </form>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

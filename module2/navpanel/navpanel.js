@@ -46,4 +46,9 @@ $(document).ready(function() {
     $('.logo img').mouseleave(function() {
         clearInterval(interval);
     });
+    
+    $('#smartPhoneNav a').click(function() {
+        var display = $(this).attr('href');
+        $(display).toggle();
+    });
 });
