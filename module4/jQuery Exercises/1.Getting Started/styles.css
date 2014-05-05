@@ -1,0 +1,25 @@
+@import url(../bg.css);
+
+.instructions {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    top: 4em;
+    z-index: 2;
+    background: rgba(0,0,0,0.75);
+    padding: 30px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+}

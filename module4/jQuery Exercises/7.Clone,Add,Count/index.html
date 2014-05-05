@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Exercise 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src='jquery-2.1.1.js'></script>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div class="instructions">
+        <h1>
+            Exercise 7: Clone, Add, Count
+        </h1>
+        <p>
+            This exercise is about using templates to repeatedly add to a list and seeing the number of items added..
+        </p>
+        <ul>
+           <li>
+                Capture the value from the select menu.
+           </li>
+           <li>
+               Clone the '&lt;li&gt;' item in the template and insert text into it.
+           </li>
+           <li>
+               Append the cloned element to the list.
+           </li>
+           <li>
+               Update the counter at the bottom with the number of items that have been added by incrementing its' value.
+           </li>
+        </ul>
+    </div>
+    <div class="sandbox">
+        <h2>Sandbox</h2>
+        <div>
+            <p>
+                <select name="numberToAdd" id="numberToAdd">
+                    <option value=></option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+                <button class="add-item">Add This Many Times</button>
+            </p>
+            <h4>
+                The List
+            </h4>
+            <ul class="sample-list">
+
+            </ul>
+            <p>
+                New line added: <span class="count"></span>
+            </p>
+        </div>
+        <div class="template">
+            <li></li>
+        </div>
+    </div>
+    <div class="bg">
+        <img src="standing-on-a-log.jpg" alt="picture of a person standing on a log.">
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Exercise 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src='jquery-2.1.1.js'></script>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div class="instructions">
+        <h1>
+            Exercise 3: Traversing the DOM
+        </h1>
+        <p>
+            This exercise about traversing from one part of the DOM to another, both up and down the source tree.
+        </p>
+        <ul>
+            <li>
+                Replace the text in the span of class 'nextText' with the text found in the span of class 'targetText' using the 'text()' method.  Start from the div of class 'sample'.
+            </li>
+            <li>
+                Starting from the span of class 'targetText', copy the text and insert it into the paragraph of class 'emptyText' by traversing.
+            </li>
+        </ul>
+    </div>
+    <div class="sandbox">
+        <h2>Sandbox</h2>
+        <div class="sample">
+            <p class="firstParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ab, aut possimus eaque explicabo cumque a magnam unde <span class="targetText">perferendis</span> <span class="nextText">recusandae</span> eius accusamus tempore in provident qui iste quos amet ea.</p>
+            <p class="emptyText"></p>
+        </div>
+    </div>
+    <div class="bg">
+        <img src="front-porch.jpg" alt="picture of a front porch">
+    </div>
+</body>
+</html>
