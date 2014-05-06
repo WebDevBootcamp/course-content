@@ -31,15 +31,17 @@ $(document).ready(function() {
     };
 
     var displayWeather = function() {
-        $('.weather').addClass('loaded');
-        var h = $('.sandbox').height() + 200; // expand sandbox to display weather.
-        $('.sandbox').animate({
-            "height": h
-        }, 1000, function() {
-            $('.weather').animate({
-                "opacity":1
-            },1000);
-        });
+        if(!$('.weather').hasClass('loaded')){
+            $('.weather').addClass('loaded');
+            var h = $('.sandbox').height() + 200; // expand sandbox to display weather.
+            $('.sandbox').animate({
+                "height": h
+            }, 1000, function() {
+                $('.weather').animate({
+                    "opacity":1
+                },1000);
+            });
+        }
     }
 
     $('#loadBtn').on('click', function() {

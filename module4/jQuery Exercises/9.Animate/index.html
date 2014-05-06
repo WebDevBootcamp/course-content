@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>jQuery Exercise 8</title>
+    <title>jQuery Exercise 9</title>
     <link rel="stylesheet" href="styles.css">
     <script src='jquery-2.1.1.js'></script>
     <script src='script.js'></script>
@@ -11,29 +11,24 @@
 <body>
     <div class="instructions">
         <h1>
-            Exercise 8: Enable, &amp; Disable
+            Exercise 9: Animate
         </h1>
         <p>
-            This exercise is about enabling and disabling page elements
+            This exercise is about animating elements on a page.  Make the div of class 'target' appear when Button 1 is pressed.  This animation requires the use of one of the jQuery methods in the Effects section of the jQuery API.  (http://api.jquery.com/category/effects/).  The second animation will fade in the div of class 'target2' and move it 200 pixels to the right.  This will require the use of the 'animate' method which can accept a large number of arguements. (http://api.jquery.com/animate/).
         </p>
-        <ul>
-           <li>
-                When the page loads, disable the first button
-           </li>
-            <li>
-                Write an event listener to listen for a click on the second button that will then toggle the first button's disablement.
-            </li>
-        </ul>
+
     </div>
     <div class="sandbox">
         <h2>Sandbox</h2>
-        <div>
-            <button id="firstButton">Disabled at First</button>
-            <button id="secondButton">Click Me!</button>
+        <div class="controls">
+            <button id="run1">Run Animation 1</button>
+            <button id="run2">Run Animation 2</button>
         </div>
+        <div class="target"></div>
+        <div class="target2"></div>
     </div>
     <div class="bg">
-        <img src="vase.jpg" alt="picture of a person standing on a log.">
+        <img src="walk-the-walk.jpg" alt="picture of a person standing on a log.">
     </div>
 </body>
 </html>

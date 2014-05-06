@@ -20,6 +20,10 @@
     box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
 }
 
+.sandbox {
+    height: 200px;
+}
+
 h1,h2 {
     margin-top: 0;
     text-align: center;
@@ -33,7 +37,17 @@ h2 {
     border-bottom: 0;
 }
 
-.template {
-    visibility: collapse;
-    height: 0;
-;}
+.target, .target2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: rgb(44, 68, 121);
+    position: relative;
+    display: none;
+    float: left;
+}
+
+.target2 {
+    display: block;
+    opacity: 0;
+}
