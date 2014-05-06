@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Exercise 10</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src='jquery-2.1.1.js'></script>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div class="instructions">
+        <h1>
+            Exercise 10: Ajax
+        </h1>
+        <p>
+            This exercise is about connecting to a webservice with AJAX and displaying the results.  Write the AJAX call to get the weather icon using the existing AJAX call as a model.  Pass in the icon type, and using the sample url in the comments as an example, add the icon to the div of class 'temp'.
+        </p>
+
+    </div>
+    <div class="sandbox">
+        <h2>Sandbox</h2>
+        <div>
+            <div.controls>
+                <select name="cityList" id="cityList">
+                    <option value="">Select A City</option>
+                    <option value="Denver">Denver</option>
+                    <option value="New York">New York</option>
+                    <option value="San Francisco">San Francisco</option>
+                </select>
+                <button id="loadBtn">Load Weather</button>
+            </div>
+            <div class="weather">
+                <div class="temp"></div>
+                <div class="cityName"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+        <img src="cold-city.jpg" alt="picture of a cold city. brrrrrr!">
+    </div>
+</body>
+</html>
