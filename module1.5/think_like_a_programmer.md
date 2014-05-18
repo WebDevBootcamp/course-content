@@ -56,4 +56,5 @@ document.getElementById("demo").innerHTML = toCelcius(32);
 
 ## Useful techniques for designing programs
 ### [Flowcharts](IntroductionToFlowcharts.pdf)
-### Psuedocode [Pseudocode Compiler](www.hendersontech.com/?page_id=33)
+### Psuedocode
+Check out this handy psuedocode compiler: www.hendersontech.com/?page_id=33
