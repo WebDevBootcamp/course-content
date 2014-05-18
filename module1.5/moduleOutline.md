@@ -73,3 +73,5 @@ having a different variable name for each individual student, we can group toget
   * like arrays, but different
 
 We all know what objects are because we are surrounded by them. In computer science, the term object refers to a particular structure that contains both data and behavior. Behavior refers to the methods used to interact with the data. Consider a book for example. A book has data (all the information that is printed on its pages) and it has behavior. A book’s behavior might be described using methods such as “open”, “turn to page”, “search index for a term”, “close”, etc
+
+Next module [Thinking Like a programmer](think_like_a_programmer.md)
