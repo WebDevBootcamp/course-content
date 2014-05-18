@@ -60,6 +60,6 @@ document.getElementById("demo").innerHTML = toCelcius(32);
 
 ## Practice Thinking Like A Programmer
   * [Lightbot](http://light-bot.com/hocflash.html)
-  * [Scratch](http://scratch.mit.edu)
+  * [Scratch](http://scratch.mit.edu) - [Scratch exercise](ScratchHideAndSeek.pdf)
 
 Next section [Flowcharts](IntroductionToFlowcharts.pdf)
