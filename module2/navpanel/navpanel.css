@@ -3,10 +3,6 @@
 
 @media screen {
 
-html {
-  width: 100%;
-  height: 100%;
-}
 
 body {
     width : 100%;
@@ -96,7 +92,13 @@ h1 {
 }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-device-width: 800px),
+    only screen and (min-width: 800px) {
+    html {
+ 		width: 100%;
+  		height: 100%;
+	}
+
     #sidebar {
 	    display: block;
     	float: right;
@@ -108,7 +110,8 @@ h1 {
     	padding: 5px;
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 800px),
+    only screen and (max-width: 800px) {
     #sidebar {
         display: block;
         width: 100%;
@@ -117,7 +120,8 @@ h1 {
         padding: 5px;
     }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-device-width: 400px),
+    only screen and (min-width: 400px){
     footer {
    	 	position: fixed;
     	bottom: 0px;
@@ -201,12 +205,27 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-device-width: 400px),
+    only screen and (max-width: 400px) {
+	html,body {
+        max-width: 400px;
+    }
+
     #smartPhoneNav {
         display: block;
     }
     footer {
         display: none;
+       	position: fixed;
+    	bottom: 0px;
+    	left: 0;
+    	width: 100%;
+    	height: 2%;
+    	color: white;
+    	background-color: #4b4b4b;
+    	text-align: center;
+    	font-size: 0.8em;
+
 	}
 	#sidebar {
     	display: none;
@@ -266,5 +285,32 @@ h1 {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
+	body {
+    	overflow: auto;
+	}
 
+}
+
+@media screen and (max-device-width: 320px) {
+	html {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (max-device-width: 720px) and (-o-min-device-pixel-ration: 20/10),
+    only screen and (max-device-width: 720px) and (min-resolution: 90dpi),
+    only screen and (max-width: 360px) {
+    html {
+        width: 360px;
+    }
+}
+@media screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio:2) {
+@media only screen and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (max-device-width: 640px) and (-o-min-device-pixel-ration: 20/10),
+    only screen and (max-device-width: 640px) and (min-resolution: 90dpi),
+    only screen and (max-width: 320px) {
+    html {
+        width: 320px;
+    }
 }
