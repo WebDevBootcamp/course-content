@@ -1,10 +1,10 @@
-# FRCC WebLab 2 - Module 1
+# FRCC WebLab - March 2017 - Module 1
 
-Welcome to the Front Range Community College WebLab - Spring 2014!
+Welcome to the Front Range Community College WebLab - March 2017!
 
 Week 1 - Introduction to Web Development
 
-![FRCC Weblab Logo](/img/weblab_logo.jpg)
+![FRCC Weblab Logo](/img/weblab_logo.png)
 
 ## Tonight
 
