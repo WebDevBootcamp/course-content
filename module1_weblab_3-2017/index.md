@@ -120,7 +120,7 @@ Why do you want to be a web developer? Based on your understanding of it so far,
 
 ## Homework
 
-Answer the following 4 questions (due date: before next class) for assessment:
+Answer the following 4 questions for assessment (due date: before next class):
 
 1. What are you most concerned about (fears)?
 2. What are you more excited about?
