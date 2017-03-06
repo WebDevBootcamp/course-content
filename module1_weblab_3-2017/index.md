@@ -8,9 +8,9 @@ Week 1 - Introduction to Web Development
 
 ## Tonight
 
-* Welcome back!
-* Questions/comments/commentary/concerns from intro night?
-* Tonight:
+* Welcome!
+* Introductions
+* Tonight (maybe!):
   * History of the web/Internet (and the history of computing that’s most relevant to the web)
   * Lifecycle of a request (or “LOAR”)
   * Plumbing (protocols, standards, wiring, etc.)
@@ -33,14 +33,20 @@ Week 1 - Introduction to Web Development
 
 ## Course Outline
 
-Here’s the outline for the rest of the course (6 modules):
+Here’s the outline for the rest of the course (6 modules/12 Weeks):
 
 1. Overview of the web and web technologies
 2. HTML & CSS
-3. Javascript
-4. More Javascript
-5. UI/UX Design
-6. Thinking Like A Developer
+3. UI/UX Design
+4. Intro to Programming
+5. Javascript
+6. HTML/CSS
+7. UI/UX
+8. Intro to Server-Side Development
+9. Javascript
+10. Javascript
+11. Thinking Like a Developer
+6. Final Project, Presentations, Graduation
 
 
 
@@ -49,16 +55,18 @@ Here’s the outline for the rest of the course (6 modules):
 And all of this wisdom will be transmitted to you by the following seers (present company excepted, of course):
 
 * [Patrick Quinn](http://www.linkedin.com/in/patrickmquinn) / Me (module 1)
-* [Kevin Sholander](http://www.linkedin.com/pub/kevin-sholander/2/242/958) (module 2)
-* [Matt Kunze](https://github.com/MattKunze?tab=activity) (modules 3-4)
-* ?? / Mystery Guest (module 5)
-* [Colin Stevenson](http://www.linkedin.com/pub/colin-stevenson/3/a/4b2) (module 6)
+* Ben Vaughn 
+* Michael 
+* Nathan White
+* David Jones 
+* Colin Stevenson 
 
 ## Me Who?
 
 * Senior Web Architect / Software Project Manager / Performance Engineer
-* Owner/entrepreneur - [Webapper Services, LLC](http://www.webapper.com) (Founded 2002)
-* 16 years in IT; 14 years in software
+* Owner/entrepreneur - [CEO/CTO, Webapper Services, LLC](http://www.webapper.com) (Founded 2002)
+* 20 years in IT; 18 years in software
+* Global Product Manager, [Lucee](http://www.lucee.org)
 * First book: _Networking for Dummies_
 * Second book: _Windows NT Networking for Dummies_
 * The rest is history!
@@ -96,13 +104,9 @@ Office: 970.223.2278
 
 ## Class Resources
 
-Google Docs folder:
+Slack(ers):
 
-[Student Folder (read-only)](https://drive.google.com/folderview?id=0B0HFqOyOPltCSnpLMFpiUnFvbDg&usp=sharing)
-
-Basecamp:
-
-[WebLab - Spring 2014](https://basecamp.com/2565496/projects/5204169-weblab-spring-2014)
+[Slack Team - https://weblabspring2017.slack.com/](https://weblabspring2017.slack.com/)
 
 ## Getting Started
 
@@ -116,7 +120,7 @@ Why do you want to be a web developer? Based on your understanding of it so far,
 
 ## Next: History of the Internet
 
-[History of the Internet](?md=/course-content/module1_weblab2/history_of_the_internet.md)
+[History of the Internet](?md=/course-content/module1_weblab_3-2017/history_of_the_internet.md)
 
 
 
