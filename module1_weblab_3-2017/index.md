@@ -126,7 +126,7 @@ Answer the following 4 questions (due date: before next class) for assessment:
 3. What are you expecting to get out of the class?
 4. What drew you to web development?
 
-Please post these in Slack, as a private message to me (). 
+Please post these in Slack, as a private message to me. 
 
 
 
