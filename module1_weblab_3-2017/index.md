@@ -46,7 +46,7 @@ Here’s the outline for the rest of the course (6 modules/12 Weeks):
 9. Javascript
 10. Javascript
 11. Thinking Like a Developer
-6. Final Project, Presentations, Graduation
+12. Final Project, Presentations, Graduation
 
 
 
