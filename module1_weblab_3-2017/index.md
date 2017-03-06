@@ -118,6 +118,18 @@ What are examples of really excellent software/tools/services on the web?
 
 Why do you want to be a web developer? Based on your understanding of it so far, what piques your interest? 
 
+## Homework
+
+Answer the following 4 questions (due date: before next class) for assessment:
+1. What are you most concerned about (fears)?
+2. What are you more excited about?
+3. What are you expecting to get out of the class?
+4. What drew you to web development?
+
+Please post these in Slack, as a private message to me (). 
+
+
+
 ## Next: History of the Internet
 
 [History of the Internet](?md=/course-content/module1_weblab_3-2017/history_of_the_internet.md)
