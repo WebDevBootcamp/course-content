@@ -56,7 +56,7 @@ And all of this wisdom will be transmitted to you by the following seers (presen
 
 * [Patrick Quinn](http://www.linkedin.com/in/patrickmquinn) / Me (module 1)
 * Ben Vaughn 
-* Michael 
+* Michael Salamon
 * Nathan White
 * David Jones 
 * Colin Stevenson 
@@ -90,7 +90,7 @@ I've developed production software using:
 
 ## Open Kimono
 
-I’m an open book (kimono)! Ask me anything about any part of the web development world. I’ve been in a lot of foxholes (and yes, now I’m mixing kimono and foxhole metaphors&mdash;messy!). And I want you to think of me as an ongoing resource for you beyond just module one. Here’s my contact info:
+I’m an open book (kimono)! Ask me anything about any part of the web development world. I’ve been in a lot of foxholes (and yes, now I’m mixing kimono and foxhole metaphors &mdash; messy!). And I want you to think of me as an ongoing resource for you beyond just module one. Here’s my contact info:
 
 Email: [pquinn@webapper.com](mailto:pquinn@webapper.com)
 
@@ -121,6 +121,7 @@ Why do you want to be a web developer? Based on your understanding of it so far,
 ## Homework
 
 Answer the following 4 questions (due date: before next class) for assessment:
+
 1. What are you most concerned about (fears)?
 2. What are you more excited about?
 3. What are you expecting to get out of the class?
