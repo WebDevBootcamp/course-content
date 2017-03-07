@@ -26,7 +26,7 @@ Github accounts for everyone!
 ## Good Reads
 
 **3 Phases of Programmer Development**  
-[http://www.webapper.com/blog/index.php/2008/04/09/three-phases-of-programmer-development/](http://www.webapper.com/blog/index.php/2008/04/09/three-phases-of-programmer-development/)
+[http://www.webapper.com/blog/index.php/2008/04/09/three-phases-of-programmer-development/](https://web.archive.org/web/20100129100150/http://www.webapper.com/blog/index.php/2008/04/09/three-phases-of-programmer-development)
 
 **Eric Sink (classic):**  
 [http://www.ericsink.com/No_Programmers.html](http://www.ericsink.com/No_Programmers.html)
