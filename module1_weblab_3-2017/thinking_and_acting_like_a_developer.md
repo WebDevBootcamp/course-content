@@ -10,6 +10,8 @@ Question: What's a good IDE? Why?
 
 [Brackets by Adobe](http://brackets.io/)
 
+[Sublime Text](https://www.sublimetext.com/)
+
 ## Clean Code
 
 * Organizing my code (projects, source control, frameworks, etc.)
