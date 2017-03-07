@@ -10,6 +10,7 @@ Highlights:
 
 * “A network of networks.”
 * Precursors: Telegraph system, electronic computers in 1950s, independent networks (ARPANET, Usenet, NPL, etc. 
+* [First email](http://thisdayintechhistory.com/10/29/first-message-on-the-internet/): Oct 29, 1969, 10:30pm PT
 * TCP/IP standardized in 1982 (“Merging the networks and creating the Internet”). 
 * ARPANET (important Internet precursor) expands in 1980s.
 * Barriers to commercialization gradually removed in 1980s and early 1990s. 
