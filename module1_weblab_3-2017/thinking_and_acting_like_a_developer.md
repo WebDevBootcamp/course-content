@@ -6,7 +6,7 @@ Question: What habits can I develop now that will make me a great (and employabl
 
 Question: What's a good IDE? Why?
 
-## Brackets
+## Brackets 
 
 [Brackets by Adobe](http://brackets.io/)
 
